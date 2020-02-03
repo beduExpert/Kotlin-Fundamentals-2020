@@ -1,5 +1,4 @@
 # Kotlin-Fundamentals-2020 
-## Módulo: Nombre del modulo
 
 ### OBJETIVO 
  - Conocer la sintaxis básica de Kotlin (estructuras de datos, funciones, módulos y paquetes).Utilizar variables y tipos de datos; operadores lógicos y condiciones, así como ciclos de control. Además, utilizar la programación orientada a objetos,  para crear aplicaciones android sencillas. 
