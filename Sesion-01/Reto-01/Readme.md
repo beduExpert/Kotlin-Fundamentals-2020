@@ -1,29 +1,28 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 01 - Primeros pasos
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Que el alumno conozca una herramienta online para testeo rápido
+- Aprender sentencias adicionales
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber cursado el [Ejemplo 1](Ejemplo-01)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En este ejercicio te vamos a enseñar una herramienta online para correr código kotlin en línea.
+Puedes ocupar este sitio para probar algún snippet que obtuviste de stackoverflow para comprobar que te sea útil o si estás en una máquina
+donde no tienes instalado IntelliJ IDEA y requieres crear rápidmante un archivo.
 
-<details>
+Puedes acceder al sitio [haciendo click aquí](https://play.kotlinlang.org)
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+En esta consola haremos lo siguiente: 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+1. Imprimir el mismo mensaje que imprimimos en el [Ejemplo 1](Ejemplo-01)
+2. Abajo de la linea de código de la tarea 1) , poner otro mensaje en consola ¿Qúe pasa con los dos mensajes?
+3. ahora utiliza *println* e imprime alguna otra cosa, qué diferencia hay con *print* ?
 
-![imagen](https://picsum.photos/200/300)
 
+**BONUS:**
+después de correr el código, consultar la url que se generó, tendrás algo así: [https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMS4zLjYxIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsImpzQ29kZSI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS4gXG4gKiBwbGF5LmtvdGxpbmxhbmcub3JnIFxuICovXG5cbmZ1biBtYWluKCkge1xuXG4gICAgcHJpbnRsbihcIkhlbGxvIHdvcmxkXCIpXG59In0=](), copiar el texto después del primer **#** y pégalo en el campo encoded de [este sitio](https://jwt.io/) y observa el JSON decodificado de la derecha, ¡El campo code es nuestro código! nosotros enviamos el código por un JSON, ellos lo procesan y nos devuelven la información!
