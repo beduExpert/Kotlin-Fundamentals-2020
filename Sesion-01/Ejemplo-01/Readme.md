@@ -1,28 +1,65 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Primeros pasos - IntelliJ IDEA y hola mundo
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Instalar y configurar la IDE
+- Aprender a utilizar las herramientas básicas
+- Crear nuestro primer programa
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Tener suficiente espacio en la memoria para instalar nuestro entorno de trabajo
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+##### Instalación de la IDE
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Vamos a descargar nuestro entorno de trabajo visitando el sitio web oficial de JetBrains en la sección para descargar el archivo de instalación dependiendo el Sistema Operativo que utilicemos, [click aquí para visitar la página de descarga](https://www.jetbrains.com/idea/download)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+![](imgs/00.png
+Una vez descargado el archivo, ejecutar e installarlo para poder crear nuestro primer proyecto.
 
-![imagen](https://picsum.photos/200/300)
 
+##### Nuestro primer proyecto
+
+Vamos a crear un nuevo proyecto de kotlin, para esto vamos a ejecutar los siguientes pasos: 
+
+1. Abrimos nuestra aplicación **IntelliJ IDEA**, lo cual provocará que se abra la siguiente ventana:
+
+<img src="imgs/01.png" width="40%"/>
+
+2. Damos click en *crear nuevo proyecto*
+
+3. Aparecerán unas opciones para configurar el tipo de proyecto, seleccionaremos ***Kotlin*** -> ***JVM | IDEA*** 
+
+<img src="imgs/02.png" width="40%"/>
+
+4. Se abrirá la siguiente pantalla, escribir el nombre del proyecto (nosotros lo nombramos *HelloWorld*)
+
+<img src="imgs/03.png" width="40%"/>
+
+5. ¡Todo listo! estaremos ahora en la pantalla del proyecto, ahora hay que crear nuestro archivo kotlin en donde haremos nuestra primera línea de código. Expandiremoss la carpeta que tiene el nombre de nuestro proyecto, daremos click derecho en la carpeta **src** y daremos click en ***New*** -> ***Kotlin File/Class*** , tal como se muestra en la imagen.
+
+<img src="imgs/05.png" width="40%"/>
+
+6. Aparecerá el siguiente recuadro, aquí es donde nombraremos el nombre de nuestro archivo, al que en este caso nombraremos *HelloWorld*
+
+<img src="imgs/06.png" width="40%"/>
+
+7. creamos nuestra primera línea de código en kotlin, que imprimirá el famoso **Hola mundo** , modificado por cierto :wink: 
+el código es el siguiente: 
+
+```kotlin
+fun main(){
+    print("¡Hola bedu!")
+}
+```
+Para correr el código, daremos al botón play verde que se genera del lado izquierdo o en la parte superior de nuestra IDE, la imagen también muestra en la parte inferior la pestaña de run habilitada, que mostrará el mensaje que mandamos a imprimir a la consola
+
+<img src="imgs/11.png"/>
+
+la ejecución del código debe verse de la siguiente forma:
+
+<img src="imgs/runcode.gif"/>
 
