@@ -1,4 +1,4 @@
-## Variables y tipos de datos
+## Declaración de variables
 
 ### OBJETIVO
 
@@ -59,6 +59,7 @@ println(number2)
 y corremos el código, la salida debe ser así: 
 
 >3
+
 >7
 
 
@@ -92,19 +93,14 @@ println(number3)
 mostrando en consola: 
 
 >3
+
 >7
+
 >24
 
 
 
-##### Tipos de datos
 
-Vamos a imprimir y clasificar todos los tipos de valores que existen en kotlin: 
-
-
-###### Numbers
-
-Son variables
 
 
 
