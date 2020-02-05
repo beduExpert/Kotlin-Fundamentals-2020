@@ -3,7 +3,7 @@
 ### OBJETIVO
 
 - Definir qué es una variable 
-- Conocer los tipos de datos básicos representaos en kotlin
+- Declarar implícitamente y explícitamente variables 
 
 #### REQUISITOS
 
@@ -97,10 +97,3 @@ mostrando en consola:
 >7
 
 >24
-
-
-
-
-
-
-
