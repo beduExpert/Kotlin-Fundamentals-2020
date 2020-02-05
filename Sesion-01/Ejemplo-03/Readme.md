@@ -109,8 +109,8 @@ Double | 64 | 53 | 11 | 15-16
  
  Por su salida vemos que los tipos siguen siendo *Int*
  
- >class kotlin.Int
- >class kotlin.Int
+ > class kotlin.Int
+ > class kotlin.Int
  
  Desde Kotlin 1.1, los números pueden ser separados con guiones bajos o *underscores* :
 
