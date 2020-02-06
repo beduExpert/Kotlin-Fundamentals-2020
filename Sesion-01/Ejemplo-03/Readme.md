@@ -25,6 +25,7 @@ La asignación de tipo de dato en la variable es automática dependiendo del dat
 en consola nos mostrará el tipo que se le asignó:
 
 > class kotlin.String
+
 > class kotlin.Int
 
 
@@ -75,7 +76,7 @@ Long | 64 | -9,223,372,036,854,775,808 (-2^63) | 9,223,372,036,854,775,807 (2^63
 **Decimales:**
 
 Tipo | Tamaño (bits) | Bits para la base | bits para el exponente | dígitos decimales
------|---------------|--------------|-------------
+-----|---------------|-------------------|------------------------|-------------------
 Float | 32 | 24 | 8 | 6-7
 Double | 64 | 53 | 11 | 15-16
 
@@ -110,6 +111,7 @@ Double | 64 | 53 | 11 | 15-16
  Por su salida vemos que los tipos siguen siendo *Int*
  
  > class kotlin.Int
+ 
  > class kotlin.Int
  
  Desde Kotlin 1.1, los números pueden ser separados con guiones bajos o *underscores* :
@@ -133,6 +135,7 @@ Se representan con el tipo *Char* y se declaran con comillas simpless ***'***
 nuestro tipo de variable debe ser Char
 
 >class kotlin.Char
+
 >A
 
 ##### Booleanos
@@ -151,14 +154,83 @@ Representan un valor positivo o negativo representados por ***true*** y ***false
 esto nos arroja: 
 
 >class kotlin.Boolean
+
 >true
+
 >class kotlin.Boolean
+
 >false
 
 ### Strings 
 
 También conocido como cadenas de texto, representados por el tipo *String*, podríamos decir que es una colección de caracteres. Se declaran con comillas dobles ***"***
 
-````kotlin
-
+```kotlin
+val dialogue: String = "It's a secret to everybody"
+println(dialogue)
 ```
+Las raw Strings permiten escribir textos planos en párrafo, sin necesidad de usar escapes, se definen con tres dobles comillas ***"""***
+
+Vamos a divertirnos un poco ejemplificando esto con el logo de The legend of zelda
+```kotlin
+val logoZelda = """
+                                       /@
+                       __        __   /\/
+                      /==\      /  \_/\/   
+                    /======\    \/\__ \__
+                  /==/\  /\==\    /\_|__ \
+               /==/    ||    \=\ / / / /_/
+             /=/    /\ || /\   \=\/ /     
+          /===/   /   \||/   \   \===\
+        /===/   /_________________ \===\
+     /====/   / |                /  \====\
+   /====/   /   |  _________    /  \   \===\    THE LEGEND OF 
+   /==/   /     | /   /  \ / / /  __________\_____      ______       ___
+  |===| /       |/   /____/ / /   \   _____ |\   /      \   _ \      \  \
+   \==\             /\   / / /     | |  /= \| | |        | | \ \     / _ \
+   \===\__    \    /  \ / / /   /  | | /===/  | |        | |  \ \   / / \ \
+     \==\ \    \\ /____/   /_\ //  | |_____/| | |        | |   | | / /___\ \
+     \===\ \   \\\\\\\/   /////// /|  _____ | | |        | |   | | |  ___  |
+       \==\/     \\\\/ / //////   \| |/==/ \| | |        | |   | | | /   \ |
+       \==\     _ \\/ / /////    _ | |==/     | |        | |  / /  | |   | |
+         \==\  / \ / / ///      /|\| |_____/| | |_____/| | |_/ /   | |   | |
+         \==\ /   / / /________/ |/_________|/_________|/_____/   /___\ /___\
+           \==\  /               | /==/
+           \=\  /________________|/=/    
+             \==\     _____     /==/ 
+            / \===\   \   /   /===/
+           / / /\===\  \_/  /===/
+          / / /   \====\ /====/
+         / / /      \===|===/
+         |/_/         \===/
+                        =  
+"""
+println(logoZelda)
+```
+
+No hace falta mostrar lo que se imprime en pantalla.
+
+Por último, los **String templates** nos dan la posibilidad de incluir variables y expresiones dentro de una String. Esto se hace usando el símbolo de pesos $ y enseguida el nombre de la variable, o llaves para una expresión (que se escribiá dentro de ellas).
+
+utilizando variables en un template: 
+
+```kotlin 
+    val edad: Int = 27
+    println("Mi edad es $edad")
+```
+
+
+utilizando expresiones en un template: 
+
+```kotlin
+    println("En dos años tendré ${edad+2} años")
+```
+
+Se mostrará esto en consola
+
+>Mi edad es 27
+
+>En dos años tendré 29 años
+
+
+
