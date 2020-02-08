@@ -13,7 +13,7 @@
 
 ##### La ecuación de la pendiente se obtiene por la siguiente expresión:
 
-<img src="ecuacion-pendiente.png" width="40%" />
+<img src="ecuacion-pendiente.jpeg" width="40%" />
 
 Expresarla ahora con operadores:
 
