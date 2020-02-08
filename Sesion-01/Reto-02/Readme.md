@@ -31,7 +31,7 @@ el resultado debe dar
 
 ##### La ecuación de la pendiente se obtiene por la siguiente expresión:
 
-<img= src="ecuacion-pendiente.png" width="40%" />
+<img src="ecuacion-pendiente.png" width="40%" />
 
 Expresarla ahora con operadores:
 
@@ -55,7 +55,8 @@ P1(4,3), P2(-3,-2)
 <summary>Respuesta</summary
 	
 El resultado esperado sería:
-m = (-2-3)/ (-3-4) = (-5)/(-7) = 5/7 = 0.714
+
+> m = (-2-3)/ (-3-4) = (-5)/(-7) = 5/7 = 0.714
 
 El código es:
 ```kotlin
