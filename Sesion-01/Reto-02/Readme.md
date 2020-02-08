@@ -19,7 +19,7 @@
 El tipo de dato por defecto es Long y lo comprobamos así:
 
 ```kotlin
- val decimal = 100.325
+ val decimal = 1.325
     println(decimal.javaClass.kotlin)
 ```
 
@@ -29,82 +29,75 @@ el resultado debe dar
 
 </details>
 
-##### La ecuación de la pendiente se obtiene por la siguiente expresión:
-
-<img src="ecuacion-pendiente.png" width="40%" />
-
-Expresarla ahora con operadores:
-
-<details>
-
-<summary>Respuesta</summary
-	
-```kotlin
-val m=(y2-y1)/(x2-x1) 
-```
-	
-</details>
-
-##### Resolver el valor de la pendiente, tomanto en cuenta que 
-
-P1(4,3), P2(-3,-2)
-
-
-<details>
-
-<summary>Respuesta</summary
-	
-El resultado esperado sería:
-
-> m = (-2-3)/ (-3-4) = (-5)/(-7) = 5/7 = 0.714
-
-El código es:
-```kotlin
-val y2 = -2
-val y1 = 3
-val x2 = -3
-val x1 = 4
-
-val m=(y2-y1)/(x2-x1)
-println(m)
-```
-
-
-el resultado obtenido es
-
->0
-
-</details>
-
-
-##### Del ejercicio anterior, responder: ¿Por qué el resultado obtenido difiere del resultado esperado?
+##### Volver flotante a la variable *decimal* 
 
 <details>
 
 <summary>Respuesta</summary>
-	
-Por que la operación de Integers dan un como resultado otro Int, como el resultado es decimal, se redondea a 0.
-	
+
+El tipo de dato por defecto es Long y lo comprobamos así:
+
+```kotlin
+ val decimal = 1.325f
+```
+
+o
+
+```kotlin
+ val decimal = 1.325F
+```
+
+el resultado debe dar
+
+>class kotlin.Float
+
 </details>
 
-##### Encontrar una solución para que se refleje el resultado
+##### Declarar una variable *const val* con el valor de PI y multiplicarla por 2 veces nuestra variable *decimal* para sacar el perímetro de un círculo
+
+Para multiplicar adelantaremos el uso del operador de multiplicación  * y su uso es así:
+
+```kotlin
+ val c= a*b
+```
 
 
 <details>
 
 <summary>Respuesta</summary>
-	
-Una solución es declarar alguno de nuestras variables como flotante, por ejemplo:
 
 ```kotlin
-val y2 = -2f
-```
-Al detectar un Float, el resultado se vuelve flotante.
+const val PI = 3.1416
+fun main() {
+    val decimal = 1.325F
 
->0.71428573
-	
+    val perimetro = 2*PI*decimal
+    
+    println(perimetro)
+
+}
+```
+
 </details>
 
+##### para el ejemplo anterior, utilizar un *String Template* para imprimir el texto *El perímetro del círculo es: [resultado]* siendo resultado nuestra variable perímetro
 
+
+
+<details>
+
+<summary>Respuesta</summary>
+
+```kotlin
+...
+fun main() {
+...
+    
+    println("El perímetro del círculo es: $perimetro")
+
+}
+```
+
+</details>
 
 
