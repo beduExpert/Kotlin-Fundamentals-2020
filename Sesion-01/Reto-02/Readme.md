@@ -16,16 +16,16 @@
 
 <summary>Respuesta</summary>
 
-	El tipo de dato por defecto es Long y lo comprobamos así:
+El tipo de dato por defecto es Long y lo comprobamos así:
 
-	```kotlin
-	 val decimal = 100.325
-	    println(decimal.javaClass.kotlin)
-	```
+```kotlin
+ val decimal = 100.325
+    println(decimal.javaClass.kotlin)
+```
 
-	el resultado debe dar
+el resultado debe dar
 
-	>class kotlin.Double
+>class kotlin.Double
 
 </details>
 
@@ -82,25 +82,25 @@ el resultado obtenido es
 
 <summary>Respuesta</summary>
 	
-	Por que la operación de Integers dan un como resultado otro Int, como el resultado es decimal, se redondea a 0.
+Por que la operación de Integers dan un como resultado otro Int, como el resultado es decimal, se redondea a 0.
 	
 </details>
 
-* Encontrar una solución para que se refleje el resultado
+##### Encontrar una solución para que se refleje el resultado
 
 
 <details>
 
 <summary>Respuesta</summary>
 	
-	Una solución es declarar alguno de nuestras variables como flotante, por ejemplo:
+Una solución es declarar alguno de nuestras variables como flotante, por ejemplo:
 
-	```kotlin
-	val y2 = -2f
-	```
-	Al detectar un Float, el resultado se vuelve flotante.
+```kotlin
+val y2 = -2f
+```
+Al detectar un Float, el resultado se vuelve flotante.
 
-	>0.71428573
+>0.71428573
 	
 </details>
 
