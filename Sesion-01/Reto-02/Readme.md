@@ -10,7 +10,7 @@
 
 #### DESARROLLO
 
-* Para un número decimal, qué tipo de dato se asigna por defecto? Imprimirlo
+##### Para un número decimal, qué tipo de dato se asigna por defecto? Imprimirlo
 
 <details>
 
@@ -29,9 +29,9 @@ el resultado debe dar
 
 </details>
 
-* La ecuación de la pendiente se obtiene por la siguiente expresión:
+##### La ecuación de la pendiente se obtiene por la siguiente expresión:
 
-<img= "src=ecuacion-pendiante" width="%40" />
+	<img= "src=ecuacion-pendiente.png" width="40%" />
 
 Expresarla ahora con operadores:
 
@@ -45,7 +45,7 @@ val m=(y2-y1)/(x2-x1)
 	
 </details>
 
-Resolver el valor de la pendiente, tomanto en cuenta que 
+##### Resolver el valor de la pendiente, tomanto en cuenta que 
 
 P1(4,3), P2(-3,-2)
 
@@ -76,7 +76,7 @@ el resultado obtenido es
 </details>
 
 
-* Del ejercicio anterior, responder: ¿Por qué el resultado obtenido difiere del resultado esperado?
+##### Del ejercicio anterior, responder: ¿Por qué el resultado obtenido difiere del resultado esperado?
 
 <details>
 
