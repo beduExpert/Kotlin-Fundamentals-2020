@@ -99,7 +99,6 @@ fun promedio(primera: Float = 8f,
 	
 ```kotlin
 val promedio = promedio(tercera = 10f)
-}
 ```
 
 el resultado debe ser: 
