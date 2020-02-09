@@ -18,7 +18,7 @@
 <details>
 	<summary>Solucion</summary>
 	
-1.
+Respuesta a 1)
 ```kotlin
 fun main(){
     val base = 20f
@@ -31,9 +31,8 @@ fun areaRectangulo(base: Float, altura: Float):Float{
     return base*altura
 }
 ```
-</details>
 
-2.
+Respuesta a 2)
 ```kotlin
 fun main(){
 ...
@@ -50,10 +49,14 @@ fun volumenPrisma(base: Float, altura:Float, ancho: Float):Float{
 }
 ```
 
+</details>
+
 3. Una función puede tener parámetros con valores por defecto en caso de que no se setee ninguno, a continuación cómo se implementa: 
 
 ```kotlin
-fun imprimir(valor: String = "Este es el valor por defecto",valor2: String = "Este es otro valor por defecto"){
+fun imprimir(
+	valor: String = "Este es el primer valor por defecto",
+	valor2: String = "Este es el segundo valor por defecto"){
 	println(valor)
 	println(valor2)
 }
@@ -62,14 +65,14 @@ fun imprimir(valor: String = "Este es el valor por defecto",valor2: String = "Es
 Se pueden asignar los dos valores o sólo el primer valor si se ingresan los valores simplemente
 
 ```kotlin
-imprimir("Reemplazo del primer String")
-imprimir("Reemplazo del primer String","Reemplazo de la segunda String")
+imprimir("Reemplazo del primer valor")
+imprimir("Reemplazo del primer valor","Reemplazo del segundo valor")
 ```
 
 Para setear únicamente el segundo String, requerimos especificar el nombre del parámetro:
 
 ```kotlin
-imprimir(valor2="reemplazo de la segunda String")
+imprimir(valor2="Reemplazo del segundo valor")
 ```
 
 Correr los ejemplos anteriores 
