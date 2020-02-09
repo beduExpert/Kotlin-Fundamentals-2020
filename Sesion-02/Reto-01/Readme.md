@@ -31,6 +31,7 @@ fun areaRectangulo(base: Float, altura: Float):Float{
     return base*altura
 }
 ```
+</details>
 
 2.
 ```kotlin
