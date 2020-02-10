@@ -1,29 +1,59 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Constructores y modificadores de acceso
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Implementar lo aprendido a código
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber finalizado el [Ejemplo 2](Ejemplo-02)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Crearemos una clase Person con datos de constructor: 
+
+* Nombre
+* Apellidos
+* Sexo
+* Altura
 
 <details>
+	<summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+la clase es la siguiente: 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+```kotlin
+package ` clases`
 
-![imagen](https://picsum.photos/200/300)
+class Person (val name:String,val apellidos: String, val sexo: String,val altura: Float) {
 
+    init {
+        println("""
+            valor edición: 
+             nombre: $name,
+             apellidos: $apellidos,
+             sexo: $sexo,
+             altura: $altura
+        """.trimIndent())
+    }
+
+
+}
+
+```
+
+Para crear una instancia de la clase:
+
+```kotlin
+fun main(){
+
+    val person = Person(
+        "Daniel",
+        "Bedu",
+        "Masculino",
+        1.78f)
+
+}
+```
+
+</details>
