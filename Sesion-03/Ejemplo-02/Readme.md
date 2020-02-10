@@ -1,4 +1,4 @@
-## Constructores y modificadores de acceso
+## Constructores
 
 ### OBJETIVO
 
