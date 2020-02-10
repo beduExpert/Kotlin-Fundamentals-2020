@@ -93,7 +93,7 @@ val myPhone = Phone()
 
 Aquí un gif que ejemplifica la declaración:
 
-<img src="imgs/03.png" width= "40%"/>
+<img src="imgs/createObject.gif" width= "40%"/>
 
 Ahora vamos a consultar el estado de mi teléfono (definimos como valor por defecto apagado), prenderemos el teléfono y volvemos a consultar su estado:
 
