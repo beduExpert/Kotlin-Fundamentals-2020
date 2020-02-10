@@ -24,6 +24,7 @@
 
 <details>
 	<summary>Solución</summary>
+	
 ```kotlin
 class Vehiculo {
     var color="Rojo"
@@ -46,6 +47,7 @@ class Vehiculo {
         gasolina+=litros
     }
 }	
+```
 
 </details>
 
