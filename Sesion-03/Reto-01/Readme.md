@@ -1,29 +1,96 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Clases
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Abstraer un problema a clases
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber comprendido el concepto de clase y objeto
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Crear una clase que represente un vehículo, que tenga las siguientes propiedades:
+
+*Color
+*Marca
+*Modelo
+*placas
+*encendido (prendido o apagado)
+*Gasolina
+*Encender
+*Apagar
+*Recargar
 
 <details>
+	<summary>Solución</summary>
+```kotlin
+class Vehiculo {
+    var color="Rojo"
+    var marca = "Volkswagen"
+    var modelo = "Nissan"
+    var placas = "203-ALV"
+    var gasolina = 0f
+    var encendido = false
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+    fun encender(){
+        encendido=true
+    }
 
-![imagen](https://picsum.photos/200/300)
+    fun apagar(){
+        encendido=false
+    }
+
+    fun recargar(litros:Float){
+        gasolina+=litros
+    }
+}	
+
+</details>
+
+2. crear un objeto de Vehículo y setear los datos de tu coche:
+* color
+* marca
+* modelo
+* placas
+
+<details>
+	<summary>Solución</summary>
+	
+```kotlin
+   val miVehiculo = Vehiculo()
+
+    miVehiculo.color="Verde"
+    miVehiculo.marca="Ford"
+    miVehiculo.modelo="Focus"
+    miVehiculo.placas="REM-4123"
+```
+</details>
+
+3. Checar si el coche está encendido (imprimiendo el status del coche), encender el cocche y volver a checar 
+
+<details>
+	<summary>Solución</summary>
+	
+```kotlin
+    println("El coche está prendido? ${miVehiculo.encendido}")
+    miVehiculo.encender()
+    println("El coche está prendido? ${miVehiculo.encendido}")
+```
+
+</details>
+
+4. Verificar en nivel del tanque imprimendo la cantidad de gasolina, recargar unos cuantos litros y después volver a consultar
+
+<details>
+	<summary>Solución</summary>
+	
+```kotlin
+    println("El tanque tiene ${miVehiculo.gasolina}")
+    miVehiculo.recargar(20.07f)
+    println("El tanque tiene ${miVehiculo.gasolina}")
+```
+
+</details>
 
