@@ -35,11 +35,11 @@ la clase Int contiene un método llamado *equals*, al crear *val a*, estoy crean
 
 Para tener una lista donde guardar mi clase, crearemos un *package* llamado **clases**. 
 
-<img src="imgs=01.png" width= "40%"/>
+<img src="imgs/01.png" width= "40%"/>
 
 Dentro de ese paquete, vamos a crear nuestra clase, el proceso es similar a cuando creamos el archivo *main.kt* de cada proyecto, pero selecciconando ***Class*** en vez de ***File***. Nombrar a esa clase **Phone**
 
-<img src="imgs=02.png" width= "40%"/>
+<img src="imgs/02.png" width= "40%"/>
 
 Dentro de la clase, declararemos ciertos atributos: 
 
@@ -93,7 +93,7 @@ val myPhone = Phone()
 
 Aquí un gif que ejemplifica la declaración:
 
-<img src="imgs=03.png" width= "40%"/>
+<img src="imgs/03.png" width= "40%"/>
 
 Ahora vamos a consultar el estado de mi teléfono (definimos como valor por defecto apagado), prenderemos el teléfono y volvemos a consultar su estado:
 
