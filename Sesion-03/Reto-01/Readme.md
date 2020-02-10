@@ -12,25 +12,25 @@
 
 1. Crear una clase que represente un vehículo, que tenga las siguientes propiedades:
 
-*Color
-*Marca
-*Modelo
-*placas
-*encendido (prendido o apagado)
-*Gasolina
-*Encender
-*Apagar
-*Recargar
+* Color
+* Marca
+* Modelo
+* placas
+* encendido (prendido o apagado)
+* Gasolina
+* Encender
+* Apagar
+* Recargar
 
 <details>
 	<summary>Solución</summary>
 	
 ```kotlin
 class Vehiculo {
-    var color="Rojo"
-    var marca = "Volkswagen"
-    var modelo = "Nissan"
-    var placas = "203-ALV"
+    var color= ""
+    var marca = ""
+    var modelo = ""
+    var placas = ""
     var gasolina = 0f
     var encendido = false
 
