@@ -1,16 +1,18 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Fundamentos de programación
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Aprender a crear un programa simple funcional y ejecutable. El concepto básico de programación estructurada. Estructuras y funciones.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
 
-	- [Ejemplo 01](Ejemplo-01)
+- [Ejemplo 01: Funciones](Ejemplo-01)
 	- [Reto 01](Reto-01)
+	
+- [Ejemplo 02: Condicionales](Ejemplo-02)
+	- [Reto 02](Reto-02)
+	
+- [Ejemplo 03: Ciclos](Ejemplo-03)
+	- [Reto 03](Reto-03)
 
