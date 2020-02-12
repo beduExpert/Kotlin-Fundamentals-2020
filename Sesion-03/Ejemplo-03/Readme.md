@@ -53,30 +53,61 @@ crearemos un método para restar una vida cuando mueres, y tampoco puede ser man
 Por último, crearemos un colisionador para detectar que en cuanto toques un objeto, tenga el efecto de la tabla.
 
 ```kotlin
-class Mario(var vidas: Int){
+class Mario(var vidas: Int =3){ //vamos a dejar setear el número de vidas al iniciar el objeto Mario
 
     init {
-        println("It's a me! Mario!")
+        println("It's a me! Mario!") //vamos a hacer que Mario se presente al construirlo!
     }
 
-    private var state = "small"
-    private var lives = 3
+    private var state = "small" //mario es pequeño al iniciar el juego
+    private var lives = 3 //uno empieza el juego con tres vidas
 
+    //resta una vida al jugador
     private fun die(){
         lives--
+        println("Haz perdido una vida!")
     }
 
+    //el modificador public es redundante
+    //en función del objeto colisionante, se ejecuta un evento
     public fun collision(collisionObj: String){
         when(collisionObj){
             "Goomba" -> die()
                 "Super Mushroom" -> state = "Super mario"
             "Fire flower" -> state = "Fire mario"
+            else -> println("Objeto desconocido ¡no pasa nada!")
 
         }
     }
-
 }
 ```
+
+¡Muy bien! ahora vamos a instanciar nuestra clase en la función *main* y hacemos que mario colisione con un objeto no definido
+
+```kotlin
+import clases.Mario
+
+fun main(){
+
+    var mario = Mario()
+
+    mario.collision("Pipe")
+
+}
+````
+
+> Objeto desconocido ¡no pasa nada!
+
+
+Ahora, agregamos otra colisión con un *Goomba*:
+
+```kotlin
+    mario.collision("Goomba")
+```
+
+> Haz perdido una vida!
+
+##### Modificadores de acceso (Visibility modifiers)
 
 
 
