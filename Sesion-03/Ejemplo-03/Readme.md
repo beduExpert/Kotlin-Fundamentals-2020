@@ -48,7 +48,11 @@ Definiremos dos atributos:
 
 estos atributos deben ser privados, de lo contrario cualquiera podrá ponerse vidas infinitas y volverse fire Mario.
 
-crearemos un método para restar una vida cuando mueres, y tampoco puede ser manipulado por otra entidad porque  uno no controla la muerte direcctamente, sino los eventos que lo provocan.
+crearemos un método para restar una vida cuando mueres, y tampoco puede ser manipulado por otra entidad porque  uno no controla la muerte directamente, sino los eventos que lo provocan, por eso debe ser también privado.
+
+**Nota:** Si *die()* debiera ser pública, y queremos especificar su tipo, la IDE nos va a marcar que la declaración del modificador es redundante: 
+
+<img src="imgs/1.png" width= "33%"/>
 
 Por último, crearemos un colisionador para detectar que en cuanto toques un objeto, tenga el efecto de la tabla.
 
@@ -159,7 +163,7 @@ get() = field
 
 veremos una línea sobre el getter y setter que indican redundancia en el código, y es lógico porque son los valores por defecto de estos y no tienen por lo tanto qué ser declarados.
 
-<img src="imgs/01.png" width= "33%"/>
+<img src="imgs/2.png" width= "33%"/>
 
 
 Utilizaremos la variable lives para crear un Setter desde Kotlin. Al parecer no existe restricción en que el número de vidas sea mínimo de una vida, y podríamos llevarlo a vidas negativas. Vamos a matar a mario 5 veces.
