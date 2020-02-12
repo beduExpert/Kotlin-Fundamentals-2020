@@ -107,7 +107,138 @@ Ahora, agregamos otra colisión con un *Goomba*:
 
 > Haz perdido una vida!
 
-##### Modificadores de acceso (Visibility modifiers)
+##### Getters y setters
+
+Los atributos de una clase pueden ser leídos y escritos. Como mencionamos, el modificador *private* impide que fuera de la clase se pueda interactuar con un método o atributo, pero si un agente externo requiere poder sumar algún valor a un número sin tener acceso al valor actual o a modificarlo directamente, necesitamos usar un Setter. En el ejemplo anterior aislamos algunas de sus propiedades, pero, si están aisladas sus propiedades cómo accedemos a ellas, o cómo es que podemos modificarlas. Es ahí donde entran los *Getters* y *Setters*. En kotlin, podremos declarar Getters y Setters por dos formas: 
+
+* Provistos por el programador
+* desde kotlin
+
+**Provistos por el programador**
+
+En el ejemplo de Mario tenemos un ejemplo de un setter:
+
+```kotlin
+private fun die(){
+        lives--
+        println("Haz perdido una vida!")
+    }
+```
+
+Con eso deducimos que un setter no sólo da acceso a una variable, sino que restringe la forma en la que se puede modificar y cualquier otro paso adicional (en este caso, imprimir el mensaje "Haz perdido una vida").
+
+si queremos saber el número de vidas necesitaremos crear un *Getter*:
+
+```kotlin
+fun getLives(): String{
+        return "$lives vidas"
+    }
+```
+
+En este caso, tampoco estamos devolviendo el número de vidas en sí, sino estamos regresando un String que especifica que son vidas la cantidad enviada. Este tipo de transformaciones pueden reducir código al ejecutar una tarea repetida en kotlin.
+
+Utilizando el *Getter* después de tocar a un Goomba queda:
+
+```kotlin
+println("Te quedan ${mario.getLives()}")
+```
+
+> Te quedan 2 vidas
+
+**Get y Set desde kotlin**
+
+Todas las variables declaradas llevan implícitas un método *Get* y *Set*, y al ser leídas o escritas, estas se ejecutan. Esto sería equivalente a declarar:
+
+```kotlin
+private var state = "small" //mario es pequeño al iniciar el juego
+set(value){
+    field = value
+}
+get() = field
+```
+
+veremos una línea sobre el getter y setter que indican redundancia en el código, y es lógico porque son los valores por defecto de estos y no tienen por lo tanto qué ser declarados.
+
+<img src="imgs/01.png" width= "33%"/>
+
+
+Utilizaremos la variable lives para crear un Setter desde Kotlin. Al parecer no existe restricción en que el número de vidas sea mínimo de una vida, y podríamos llevarlo a vidas negativas. Vamos a matar a mario 5 veces.
+
+```kotlin
+ for(i in 1..5){ //matando a mario 5 veces
+        mario.collision("Goomba")
+        println("Te quedan ${mario.getLives()}")
+    }
+```
+
+ejecutamos ese código y tendremos este resultado:
+
+> Haz perdido una vida!
+
+> Te quedan 2 vidas
+
+> Haz perdido una vida!
+
+> Te quedan 1 vidas
+
+> Haz perdido una vida!
+
+> Te quedan 0 vidas
+
+> Haz perdido una vida!
+
+> Te quedan -1 vidas
+
+> Haz perdido una vida!
+
+> Te quedan -2 vidas
+
+Este código lógicamente no está bien, requerimos ponerle un alto cuando mario tenga ya sólo una vida, porque al llegar a cero, se pierde automáticamente. Para eso utilizaremos el método *set*:
+
+```kotlin
+set(value){
+        if(field == 1){ //si teníamos una vida, se termina el juego
+            field = 0
+            gameOver()
+        } else if(field==0){ //si ya teníamos 0 vidas, no haz reiniciado el juego
+            println("Necesitas volver a jugar")
+        }
+        else{
+            field=value //podemos asignar el valor correctamente
+        }
+    }
+```
+
+La función *die()* ahora no es inutil, por lo tanto la eliminamos y al colisionar con un *Goomba*, pondremos directamente:
+
+```kotlin
+...
+"Goomba" -> lives--
+...
+```
+
+y reproducimos:
+
+> It's a me! Mario!
+
+> Te quedan 2 vidas
+
+> Te quedan 1 vidas
+
+> JUEGO TERMINADO
+
+> Te quedan 0 vidas
+
+> Necesitas volver a jugar
+
+> Te quedan 0 vidas
+
+> Necesitas volver a jugar
+
+> Te quedan 0 vidas
+
+
+
 
 
 
