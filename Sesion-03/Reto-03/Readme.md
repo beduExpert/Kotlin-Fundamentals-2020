@@ -1,29 +1,88 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Getters, Setters y modificadores de acceso
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Implementar modificadores de acceso de acuerdo a lo que se requiera
+- Crear getters y setters en situaciones que lo ameriten
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber terminado el [Ejemplo 3](Ejemplo-03)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Crear un atributo Booleano que nos permita saber si aún seguimos vivos, la variable debe ser únicamente de lectura. Utilizaremos ese valor para elegir si colisionar con un Goomba en el ciclo for.
 
 <details>
+	<summary>Respuesta</summary>
+	
+crear la variable junto con su getter
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```kotlin
+  val isAlive: Boolean
+    get() {
+        return lives>=1
+    }
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+en el ciclo for de *main.kt*, condicionar la colisión al siguiente *if*:
 
-![imagen](https://picsum.photos/200/300)
+```kotlin
+ if(mario.isAlive){
+            mario.collision("Goomba")
+            println("Te quedan ${mario.getLives()}")
+        }
+```
 
+</details>
+
+2. Añadiremos la capacidad de colisionar con una estrella, cuando esto pase, debemos cambiar el estado de Mario por 10 segundos a star y luego regresarlo a su estado anterior. Sin ahondar en el tema, propocionamos un código para esperar 10 segundos para ejecutar código:
+
+```kotlin
+import java.util.*
+import kotlin.concurrent.schedule
+
+
+...
+
+    Timer("SettingUp", false).schedule(10000) {
+        //Escribe el código a ejecutar 
+    }
+
+```
+
+Crear el caso de la estrella en el colisionador, crear el setter y reproducir la función en *main.kt*
+
+<details>
+	<summary>Solución</summary>
+	
+En el colisionador: 	
+
+```kotlin
+"Star" -> state = "Star"
+```
+	
+el setter será el siguiente:
+
+```kotlin
+set(value) {
+        val before = field
+        field = value
+        println("tu estado ahora es $field")
+        if(value=="Star"){
+            Timer("SettingUp", false).schedule(10000) {
+                field = before
+                println("tu estado ahora es $field")
+            }
+        }
+        field = value
+    }
+```
+
+Ahora hacemos colisionar a Mario con una estrella:
+
+```kotlin
+mario.collision("Star")
+```
+
+</details>
