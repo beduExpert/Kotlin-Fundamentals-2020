@@ -71,7 +71,7 @@ El código respondió como se esperaba. Esta es una clase base para determinar a
 
 Todas las clases derivan de la superclase ***Any()***
 
-<img src="img/any.gif" width="40%"/>
+<img src="imgs/any.gif" width="40%"/>
 
 Como vemos en el gif, esta nos hereda tres métodos: 
 
@@ -91,12 +91,12 @@ class Goomba: Enemy(){
 
 En este caso, nos saldrá un error en el tipo de dato, que revelará el siguiente conflicto:
 
-<img src="img/01.png" width="40%"/>
+<img src="imgs/01.png" width="40%"/>
 
 
 Si damos click izquierdo sobre el error, y posteriormente pulas *option + enter*, saldrá una posible solución: 
 
-<img src="img/02.png" width="40%"/>
+<img src="imgs/02.png" width="40%"/>
 
 Al dar click sobre esa función, veremos que a enemy se le asigna un modificador ***open***. Dicho modificador, otorga la facultad a una clase de poder heredar o de un método a ser sobreescrito.
 
@@ -107,7 +107,7 @@ Al dar click sobre esa función, veremos que a enemy se le asigna un modificador
 
 Regresando a nuestra clase *Goomba*, podremos notar que existe ahora otro error marcado entre los paréntesis de la superclase: 
 
-<img src="img/03.png" width="40%"/>
+<img src="imgs/03.png" width="40%"/>
 
 Como podemos ver en la imagen, el error se debe a que nos faltan dos parámetros: *name* y *strength*, que son los parámetros iniciales del constructor de nuestra clase padre. Para corregir este error, debemos crear un constructor para *Goomba* que incluyan dichas variables y asignárselas al constructor de la superclase:
 
