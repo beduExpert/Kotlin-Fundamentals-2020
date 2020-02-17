@@ -17,7 +17,7 @@
 
 Vamos a descargar nuestro entorno de trabajo visitando el sitio web oficial de JetBrains en la sección para descargar el archivo de instalación dependiendo el Sistema Operativo que utilicemos, [click aquí para visitar la página de descarga](https://www.jetbrains.com/idea/download)
 
-![](imgs/00.png
+<img src="imgs/00.png" width="40%"/>
 Una vez descargado el archivo, ejecutar e installarlo para poder crear nuestro primer proyecto.
 
 
