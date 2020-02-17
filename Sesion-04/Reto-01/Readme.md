@@ -63,7 +63,7 @@ en consola se debe reproducir lo siguiente:
 
 </details>
 
-4. A partir de la clase Koopa, crear la clase de Koopas voladores (Koopa paratroopa). Su estado inicial es *Volando*, al colisionar por primera vez camina, a la segunda se vuelve concha y a la tercera muere. <img src="paratroopa.jpg" width="40%"/>
+4. A partir de la clase Koopa, crear la clase de Koopas voladores (Koopa paratroopa). Su estado inicial es *Volando*, al colisionar por primera vez camina, a la segunda se vuelve concha y a la tercera muere. <img src="paratroopa.jpg" width="10%"/>
 
 
 <details>
