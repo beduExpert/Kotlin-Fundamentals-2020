@@ -73,7 +73,7 @@ Primero hay que volver a la clase Koopa *open* y volver la clase estado a *prote
 ```kotlin
 open class Koopa:
 ...
-protected var state = "Walking"
+protected open var state = "Walking"
 ```
 
 Después creamos la clase que hereda de Koopa y reescribimos el colisionador, inicializamos el estado como flying
@@ -81,9 +81,8 @@ Después creamos la clase que hereda de Koopa y reescribimos el colisionador, in
 ```kotlin
 class KoopaParatroopa: Koopa() {
 
-    init{
-        state="Flying"
-    }
+    override var state= "Flying"
+    
     override fun collision(collider: String){
         when(collider){
             "Weapon" -> {
