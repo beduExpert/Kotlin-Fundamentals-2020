@@ -115,7 +115,7 @@ Como mencionábamos anteriormente, no podemos instanciar una clase abstracta.
 
 Ahora vamos a crear una clase para representra el servicio de viajes nacionales, que heredará de la clase *Travel*.
 
-<img src="imgs/implementMembers.gif" width="40%"/>
+<img src="imgs/implementMembers.gif" width="80%"/>
 
 En esta animación, vemos un error al declarar *National* como hijo de *Travel*, que es no implementar los miembros abstractos, por lo que podemos hacerlo automáticamente con la ayuda de la IDE o manualmente. Notaremos el modificador *override*, que en este caso, se emplea para implementar los miembros abstractos de una clase abstracta.
 
