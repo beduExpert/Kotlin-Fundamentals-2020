@@ -243,6 +243,13 @@ El resultado es el siguiente:
 
 Que es el precio con el descuento del 10% ($1440).
 
+### Diferencias entre clases abstractas e interfaces
+
+| Clases abstractas  | Interfaces |
+| ------------- | ------------- |
+| Una clase sólo puede heredar de una abstracta | puede implementársele múltiples a una clase  |
+| puede heredar de una sola clase (abstracta o concreta)  | Puede implementar una sola interfaz |
+| Se requiere el keyword ***abstract*** para definir un miembro abstracto |  el keyword es opcional pues ya viene por defecto |
 
 
 
