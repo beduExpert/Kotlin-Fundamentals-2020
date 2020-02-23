@@ -1,28 +1,46 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Data class y Companion object
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Definir clases para mantener una estructura de datos
+- Crear un miembro propio de una clase y no de un objeto
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Mantener datos en una clase
+2. Requerir la inicialización de una variable constante 
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+##### Data class
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Un Data class es una clase que tiene como único objetivo es cargar información en una clase a través de su constructor, sin poder definir métodos para modificar o eliminar sus datos.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+Su definición y declaración sucede a través del constructor de la clase, pero con el modificador **data**.
+```kotlin
+data class Movie(
+    val name: String,
+    val gender: String,
+    val duration: Double
+)
+```
+Anteriormente declaramos una clase de datos de una película. Vamos a crear la primera clase de datos, que guardará datos de la película *Scary movie*.
 
-![imagen](https://picsum.photos/200/300)
+```kotlin
+    //declaración
+    val scaryMovie = Movie("Scary movie", "Comedia", 88.27)
+    //impresión
+    println(scaryMovie)
+```
 
+la impresión de una data class se ve así:
 
+> Movie(name=Scary movie, gender=Comedia, duration=88.27)
+
+Si queremos obtener la propeidad de un objetoen pesona:
+
+``` 
+
+//imprimir una propiedad en específico
+    println(scaryMovie.name)
+    
