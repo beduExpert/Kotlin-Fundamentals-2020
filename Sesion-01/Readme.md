@@ -1,8 +1,8 @@
-## Titulo de la Sesion 
+## ¿Qué es Kotlin?
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Indicar el alcance actual del lenguaje kotlin, por qué  utilizarlo, una breve introducción de cómo funciona, sintaxis básica, Kotlin y JetBrains.
 
 #### ORGANIZACION DE LA CLASE 
 
