@@ -28,35 +28,54 @@ El proyecto será una simulación de alguna funcionalidad, pero no tiene por qu�
 La línea de código ***println()*** nos será muy útil, pues así sucederá la mayor parte de la simulación, como mostrar el precio de un producto seleccionado al cliente, o imprimir un recibo de compra a un usuario. 
 
 ```kotlin
+println("Bienvenidos a la tienda en línea de Bedu!")
+```
+
+> Bienvenidos a la tienda en línea de Bedu!
+
+##### Variables y tipos de datos y operadores
+
+Está demás decir que ocuparemos bastantes variables en nuestro proyecto para tratar datos. Si creamos una tienda en línea, vamos a requerir guardar el nombre del usuario y la contraseña de nuestro cliente, que son Strings, para identificar la compra. Para un directorio de restaurantes, tendremos qué tener una lista de nombres de restaurantes con su dirección, y el precio promedio de una comida. 
+
+guardando precios en una variable
+```kotlin
 val productPrice = 200
 val productPrice2 = 150
 
+println("El precio del artículo es de $productPrice")
+```
+
+conteniendo información de perfil en variables: 
+
+```kotlin
+val name = "Daniel"
+val enterprise = "Bedu"
+val uid = "3624-2332-5480"
+val credit = 828.33
+val gender = false
+val age = 44
+```
+
+##### Operaciones
+
+Utilizaremos operadores aritméticos para la suma de cantidades para obtener el total a pagar, y quizá una multiplicación para aplicar un impuesto.
+
+```kotlin
 val amount = productPrice + productPrice2 // la suma del precio de unos productos
 val tax = 1.16f //el porcentaje con impuestos 
 
 val total = amount*tax; //valor total con impuestos sumados
+println("El total a pagar es de $total pesos")
 ```
 
-##### Variables, tipos de datos y operadores
-
-Está demás decir que ocuparemos bastantes variables en nuestro proyecto para tratar datos. Si creamos una tienda en línea, vamos a requerir guardar el nombre del usuario y la contraseña de nuestro cliente, que son Strings, para identificar la compra. Para un directorio de restaurantes, tendremos qué tener una lista de nombres de restaurantes con su dirección, y el precio promedio de una comida. Además, utilizaremos operadores aritméticos para la suma de cantidades para obtener el total a pagar, y quizá una multiplicación para aplicar un impuesto.
-
-##### Condicionales y bucles
-
-Los bucles optimizan el código de un archivo y controlan la forma de controlar series de datos. Se puede requerir crear un ciclo While cuando se requiera encontrar un dato en específico en una lista. Las condicionales, por otra parte, cubren la necesidad de tomar una decisión dependiendo del resultado de una operación. Si vamos a crear un login, requerimos verificar que el correo y la contraseña sean iguales a los registrados.
+Podemos validar la edad de un usuario para saber si es apto para acceder al contenido de nuestra aplicación
 
 ```kotlin
-if(email=="kotlin@bedu.org" && password=="Kotlindesarrollo"){
-        println("Inicio de sesión exitoso")
-}
+val isLegal = age>=18
+println("El usuario es mayor de edad? $isLegal")
 ```
 
-También para poder cobrar, requerimos verificar que nuestro saldo se suficiente para pagar un producto:
 
-```kotlin
-if(saldo>=precio){
-        println("Artículo comprado")
-        saldo-=precio
-}
-```
+
+
 
