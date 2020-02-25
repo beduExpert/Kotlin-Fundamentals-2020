@@ -1,16 +1,19 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Programación orientada a objetos - Parte II
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Complementar el conocimiento de POO con conceptos avanzados.
+- Integrar sintaxis específica de este paradigma en kotlin.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+	- [Ejemplo 01: Herencia y polimorfismo](Ejemplo-01)
+		- [Reto 01](Reto-01)
+		
+	- [Ejemplo 02: Clases abstractas e interfaces](Ejemplo-02)
+		- [Reto 02](Reto-02)
+		
+	- [Ejemplo 03: Data class y Companion object](Ejemplo-03)
+		- [Reto 03](Reto-03)
 
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
-
+	
