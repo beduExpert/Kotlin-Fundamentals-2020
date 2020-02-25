@@ -14,6 +14,6 @@
 	- [Reto 02](Reto-02)
 		
 - [Ejemplo 03: Data class y Companion object](Ejemplo-03)
-	- [Reto 03](Reto-03)
+
 
 	
