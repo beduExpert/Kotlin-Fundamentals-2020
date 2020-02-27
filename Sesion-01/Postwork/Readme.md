@@ -8,7 +8,7 @@
 
 1. Abstraer el concepto de ciclos y condicionales
 2. Manejar de forma básica el IDE 
-3. aplicar variables y realizar operaciones sobre ellas
+3. Aplicar variables y realizar operaciones sobre ellas
 
 #### DESARROLLO
 
