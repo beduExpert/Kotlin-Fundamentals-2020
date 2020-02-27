@@ -113,7 +113,7 @@ Ahora, en nuestro *main()*, intentaremos instanciar nuestra clase *Travel* ¿Qu�
 
 Como mencionábamos anteriormente, no podemos instanciar una clase abstracta.
 
-Ahora vamos a crear una clase para representra el servicio de viajes nacionales, que heredará de la clase *Travel*.
+Ahora vamos a crear una clase para representa el servicio de viajes nacionales, que heredará de la clase *Travel*.
 
 <img src="imgs/implementMembers.gif" width="80%"/>
 
