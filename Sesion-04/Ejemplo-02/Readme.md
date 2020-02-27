@@ -8,7 +8,7 @@
 
 #### REQUISITOS
 
-1. Comprender correctamente herencias 
+1. Haber creado clases que hereden de otras.
 
 #### DESARROLLO
 
