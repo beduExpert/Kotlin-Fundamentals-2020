@@ -2,11 +2,12 @@
 
 ### OBJETIVO
 
-- Conocer los tipos de datos básicos representados en kotlin
+- Abstraer los conceptos de cada tipo de dato para interpretar sus aplicaciones.
+- Usar los diferentes tipos de datos disponibles en kotlin.
 
 #### REQUISITOS
 
-1. Tener una breve idea de qué representa una variable
+1. Tener alguna idea de los tipos de datos básicos en un lenguaje de programación.
 
 #### DESARROLLO
 
