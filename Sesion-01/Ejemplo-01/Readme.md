@@ -4,8 +4,8 @@
 ### OBJETIVO
 
 - Instalar y configurar la IDE
-- Aprender a utilizar las herramientas básicas
-- Crear nuestro primer programa
+- Utilizar las herramientas básicas que nos proporciona el entorno de desarrollo
+- Crear nuestro primer programa con Kotlin!
 
 #### REQUISITOS
 
