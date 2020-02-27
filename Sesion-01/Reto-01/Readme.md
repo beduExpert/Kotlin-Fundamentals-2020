@@ -2,8 +2,8 @@
 
 ### OBJETIVO 
 
-- Que el alumno conozca una herramienta online para testeo rápido
-- Aprender sentencias adicionales
+- Utilizar una alternativa online para testeo rápido.
+- Complementar el tema de impresión de pantallas.
 
 #### REQUISITOS 
 
