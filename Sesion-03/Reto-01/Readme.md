@@ -2,7 +2,7 @@
 
 ### OBJETIVO 
 
-- Abstraer un problema a clases
+- Analizar un problema para poder plantear su solución en términos de objetos.
 
 #### REQUISITOS 
 
