@@ -3,7 +3,8 @@
 ### OBJETIVO 
 
 - Implementar modificadores de acceso de acuerdo a lo que se requiera
-- Crear getters y setters en situaciones que lo ameriten
+- Definir cómo se puede leer y modificar un dato
+- Ejecutar acciones adiciconales al leer o modificar un valor de algún atributo
 
 #### REQUISITOS 
 
