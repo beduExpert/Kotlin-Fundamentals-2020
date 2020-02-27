@@ -3,7 +3,7 @@
 ### OBJETIVO
 
 - Personalizar comportamiento al asignar u obtener atributos de una clase
-- Conocer los modificadores que permiten controlar la visibilización de un objeto
+- Definir la visibilidad de una clase, atributo o método mediante *keywords*.
 
 #### REQUISITOS
 
