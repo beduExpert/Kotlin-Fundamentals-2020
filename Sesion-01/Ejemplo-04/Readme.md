@@ -2,11 +2,13 @@
 
 ### OBJETIVO
 
-- Aprender a utilizar los operadores básicos
+- Diseñar algoritmos que impliquen operaciones.
+- Representar operaciones por medio de variables y operadores.
 
 #### REQUISITOS
 
 1. Conocer aritmética básica :innocent:
+2. Tener una breve idea de álgebra booleana.
 
 #### DESARROLLO
 
