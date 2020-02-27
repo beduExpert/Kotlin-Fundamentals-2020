@@ -2,7 +2,7 @@
 
 ### OBJETIVO 
 
-- Implementar lo aprendido a código
+- Inicializar objetos a través de su constructor
 
 #### REQUISITOS 
 
