@@ -2,9 +2,9 @@
 
 ### OBJETIVO
 
-- Conocer el concepto de clases abstractas
-- Comprender qué son las interfaces y conocer los casos de uso
-- Diferenciar entre estas dos
+- Programar una clase abstracta como unas base no instanciable de otras clases
+- Sintetizar el significado de interfaces en kotlin y conocer los casos de uso
+- Diferenciar entre estas dos por medio de la distinción de sus características y aplicaciones
 
 #### REQUISITOS
 
