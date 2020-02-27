@@ -6,8 +6,6 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
-
 	- [Ejemplo 01: Primeros pasos](Ejemplo-01)
 		- [Reto 01](Reto-01)
 	
