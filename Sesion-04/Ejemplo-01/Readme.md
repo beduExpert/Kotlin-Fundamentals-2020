@@ -2,11 +2,12 @@
 
 ### OBJETIVO
 
-- Crear clases a partir de otras
+- Definir clases base que generalicen las propiedades y el comportamiento de una familia.
+- Heredar y redefinir miembros de una clases padre.
 
 #### REQUISITOS
 
-1. Investigar acercca de estos principios
+1. Leer el prework de esta sesión para formarse una idea de lo que implican estos conceptos.
 
 #### DESARROLLO
 
