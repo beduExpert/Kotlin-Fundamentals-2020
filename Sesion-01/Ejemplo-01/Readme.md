@@ -15,10 +15,10 @@
 
 ##### Instalación de la IDE
 
-Vamos a descargar nuestro entorno de trabajo visitando el sitio web oficial de JetBrains en la sección para descargar el archivo de instalación dependiendo el Sistema Operativo que utilicemos, [click aquí para visitar la página de descarga](https://www.jetbrains.com/idea/download)
+Se pueden saltar este paso si lo hicieron previamente siguiendo las instrucciones del prework. Vamos a descargar nuestro entorno de trabajo visitando el sitio web oficial de JetBrains en la sección para descargar el archivo de instalación dependiendo el Sistema Operativo que utilicemos, [click aquí para visitar la página de descarga](https://www.jetbrains.com/idea/download)
 
 <img src="imgs/00.png" width="40%"/>
-Una vez descargado el archivo, ejecutar e installarlo para poder crear nuestro primer proyecto.
+Una vez descargado el archivo, ejecutar e instalarlo para poder crear nuestro primer proyecto.
 
 
 ##### Nuestro primer proyecto
