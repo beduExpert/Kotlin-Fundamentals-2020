@@ -33,17 +33,17 @@ Algunos de los ejemplos podrían ser una lista de cosas por hacer, una aplicaci�
 - Aconsejamos no definir una idea muy compleja del proyecto, puesto a que su propósito es meramente didáctico.
 - La estructura del código irá tomando forma a lo largo del proyecto.
 - Iniciaremos nuestro proyecto creando un archivo main y ahí escribiremos nuestro código.
-- Tenemos limitadass herramientas para iniciar, por lo que iniciaremos con tareas sencillas como sumas de cantidades en el caso de una tienda en línea o la simulación de reproduccción de una canción con una impresión de pantalla.
+- Tenemos limitadas herramientas para iniciar, por lo que iniciaremos con tareas sencillas como sumas de cantidades en el caso de una tienda en línea o la simulación de reproduccción de una canción con una impresión de pantalla.
 
 
-El proyecto será una simulación de alguna funcionalidad, pero no tiene por qué funcionar realmente: Si hacemos un reproductor de audio, podríamos simular la repdroducción con un mensaje en consola que diga: "Reproduciendo/pausado".
+El proyecto será una simulación de alguna funcionalidad, pero no tiene por qué funcionar realmente: Si hacemos un reproductor de audio, podríamos simular la reproducción con un mensaje en consola que diga: "Reproduciendo/pausado".
 
 La línea de código ***println()*** nos será muy útil, pues así sucederá la mayor parte de la simulación, como mostrar el precio de un producto seleccionado al cliente, o imprimir un recibo de compra a un usuario. 
 
 Para ingresar datos desde la consola, se puede utilizar el comando ***readLine()***, que regresa un *String*.  
 
 ```kotlin
-val input = readLine
+val input = readLine()
 ```
 
 Si se requiere un dato de diferente valor, se puede hacer la conversión al tipo de dato que se requiera (con la posibilidad de obtener un error en caso de que el String no sea compatible con el tipo de dato).
