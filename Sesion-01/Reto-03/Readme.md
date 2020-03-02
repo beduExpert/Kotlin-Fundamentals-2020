@@ -6,7 +6,7 @@
 
 #### REQUISITOS 
 
-1. Haber cursado el [Ejemplo 4](Ejemplo-04)
+1. Haber cursado el [Ejemplo 4](../Ejemplo-04)
 
 #### DESARROLLO
 
