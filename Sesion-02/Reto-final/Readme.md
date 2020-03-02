@@ -3,7 +3,7 @@
 
 ### OBJETIVO
 
-- Sintetizar los temas de la [Sesión 2](../Sesion-02) para aplicarlos al proyecto final.
+- Sintetizar los temas de la [Sesión 2](../../Sesion-02) para aplicarlos al proyecto final.
 - Programar con elementos de programación estructurada la lógica básica de nuestro proyeccto.
 - Almacenar datos requeridos para nuestro proyecto en estruccturas.
 
