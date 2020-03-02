@@ -13,7 +13,7 @@
 
 Un constructor es un método que define los atributos mínimos requeridos para crear un objeto.
 
-En el [Reto 1](Reto-01) definimos atributos con Strings vacías
+En el [Reto 1](../Reto-01) definimos atributos con Strings vacías
 
 ```kotlin
 class Vehiculo {
