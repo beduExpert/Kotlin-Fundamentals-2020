@@ -22,7 +22,7 @@ Cuando hablamos de atributos en una clase, caeremos en cuenta de que algunas req
     
 Cabe señalar que los modificadores no se limitan a Programación orientada objetos, sino que aplican a archivos, funciones, variables, etc. Sin embargo, es un tema que va de la mano con POO.
 
-Public es el modificador por defecto, eso hace que declararlo sea redundante. Hemos visto  previamente el uso de valores públicos en el  [Reto 1](Reto-01#desarrollo), cuando consultamos desde *main.kt* el estado del coche. 
+Public es el modificador por defecto, eso hace que declararlo sea redundante. Hemos visto  previamente el uso de valores públicos en el  [Reto 1](../Reto-01), cuando consultamos desde *main.kt* el estado del coche. 
 
 ```kotlin
  println("El coche está prendido? ${miVehiculo.encendido}")
