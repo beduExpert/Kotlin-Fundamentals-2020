@@ -59,6 +59,13 @@ val reader = Scanner(System.`in`)
 var age:Int = reader.nextInt()
 ```
 
+##### Interfaz gráfica
+
+Si un equipo opta por desarrollar una interfaz gráfica mínima para el proyecto, existen algunas librerías que hacen el trabajo. En este curso no se cubrirá este tema y se advierte que desarrollar una, implica inversión extra de tiempo, pero existe libertad para esto. Existe un framework llamado TornadoFX que es una adaptación de JavaX para Kotlin.
+
+https://github.com/edvin/tornadofx 
+
+consulta la documentación para la integración si así se requiere.
 
 
 
