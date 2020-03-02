@@ -4,7 +4,7 @@
 
 ### OBJETIVO 
 
-- Crear funciones a partir de lo aprendido en el [Ejemplo 1](Ejemplo-01)
+- Crear funciones a partir de lo aprendido en el [Ejemplo 1](../Ejemplo-01)
 
 #### REQUISITOS 
 
