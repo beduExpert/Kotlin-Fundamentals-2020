@@ -6,7 +6,7 @@
 
 #### REQUISITOS 
 
-1. Haber finalizado el [Ejemplo 2](/Ejemplo-02)
+1. Haber finalizado el [Ejemplo 2](../Ejemplo-02)
 
 #### DESARROLLO
 
