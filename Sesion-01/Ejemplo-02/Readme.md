@@ -22,7 +22,7 @@ existen tres tipos de variables:
 * **val:** variables que no pueden modificar su valor (inmutables), la asignación puede suceder en *runtime*
 * **const:** tampoco se puede modificar su valor, pero la asignación de su valor se determina en *compile time* o tiempo de compilación
 
-haremos el siguiente ejercicio, abriendo un nuevo proyecto como en el [Ejemplo 1](Ejemplo-01) y creando un archivo main con el siguiente código:
+haremos el siguiente ejercicio, abriendo un nuevo proyecto como en el [Ejemplo 1](../Ejemplo-01) y creando un archivo main con el siguiente código:
 
 ```kotlin
 fun main(){
