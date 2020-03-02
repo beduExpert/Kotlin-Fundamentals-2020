@@ -7,7 +7,7 @@
 
 ### REQUISITOS
 
-1. Completar la  [Sesion 1](,,/../Sesion-01) y especialmente haber comprendido los temas:
+1. Completar la  [Sesion 1](../../Sesion-01) y especialmente haber comprendido los temas:
     - Tipos de datos.
     - Operadores.
 
