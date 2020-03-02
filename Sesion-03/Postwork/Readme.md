@@ -7,7 +7,7 @@
 
 #### REQUISITOS
 
-1. Haber terminado los ejemplos y retos de esta [Sesión](../Sesion-03)
+1. Haber terminado los ejemplos y retos de esta [Sesión](../)
 
 #### DESARROLLO
 
