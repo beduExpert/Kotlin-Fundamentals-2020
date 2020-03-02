@@ -7,7 +7,7 @@
 
 #### REQUISITOS 
 
-1. Haber cursado el [Ejemplo 1](Ejemplo-01)
+1. Haber cursado el [Ejemplo 1](../Ejemplo-01)
 
 #### DESARROLLO
 
@@ -19,7 +19,7 @@ Puedes acceder al sitio [haciendo click aquí](https://play.kotlinlang.org)
 
 En esta consola haremos lo siguiente: 
 
-1. Imprimir el mismo mensaje que imprimimos en el [Ejemplo 1](Ejemplo-01)
+1. Imprimir el mismo mensaje que imprimimos en el [Ejemplo 1](../Ejemplo-01)
 2. Abajo de la linea de código de la tarea 1) , poner otro mensaje en consola ¿Qúe pasa con los dos mensajes?
 3. ahora utiliza *println* e imprime alguna otra cosa, qué diferencia hay con *print* ?
 
