@@ -12,7 +12,7 @@
 
 #### DESARROLLO
 
-En este reto diseñaremos e implementaremos clases en nuestro proyecto para poder clasificar nuestros métodos y variables, llevando así un esquema más organizado. En el [reto final](../Sesion-02/Reto-final) de la [Sesión 2](../Sesion-02) dividimos los diferentes algoritmos que componen nuestro proyecto en funciones y variables. Ahora hay que diseñar clases que cubran nuestros requerimientos y que incluyan las funciones desarrolladas. 
+En este reto diseñaremos e implementaremos clases en nuestro proyecto para poder clasificar nuestros métodos y variables, llevando así un esquema más organizado. En el [reto final](../../Sesion-02/Reto-final) de la [Sesión 2](../../Sesion-02) dividimos los diferentes algoritmos que componen nuestro proyecto en funciones y variables. Ahora hay que diseñar clases que cubran nuestros requerimientos y que incluyan las funciones desarrolladas. 
 
 ##### Lineamientos
 
