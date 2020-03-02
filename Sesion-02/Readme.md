@@ -16,7 +16,7 @@
 - [Ejemplo 03: Ciclos](Ejemplo-03)
 	- [Reto 03](Reto-03)
 
-- [Ejemplo 04: Estructuras de datos](Ejemplo-03)
+- [Ejemplo 04: Estructuras de datos](Ejemplo-04)
 
 - [Reto final - Implementando programación estructurada](Reto-final)
 
