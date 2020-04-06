@@ -30,8 +30,27 @@ public void nonInlined(Function runLambda()) {
     runLambda.invoke();
     System.out.println("Después de correr la función recibida");
 }
-
 ```
+
+Pero al implementar el HOF pasándole una lambda
+
+```kotlin
+inlined {
+    println("Llamando a la función noninlined")
+}
+```
+
+, se crea un nuevo objeto de acuerdo al bytecode:
+
+```java
+nonInlined(new Function() {
+    @Override
+    public void invoke() {
+        System.out.println("Llamando a la función noninlined");
+    }
+});
+```
+
 
 Java también crea un objeto Function para guardar la función 
 
@@ -71,6 +90,11 @@ System.out.println("do something here");
 System.out.println("after");
 ```
 
+En caso de requerir que algún parámetro no se someta a inline, debemos usar el keywordd ***noninline*** en él:
+
+```kotlin
+inline fun foo(inlined: () -> Unit, noinline notInlined: () -> Unit) { ... }
+```
 
 ***NOTAS***
 
