@@ -1,28 +1,78 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Inline functions
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aplicar el keyword inline para depurar espacio en memoria cuando se cree una función de orden superior
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Crear funciones que reciban funciones como parámetros
+
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En el [Ejemplo 1](../Ejemplo-01) utilizamos lambdas y high order functions (HFO) para realizar distintas operaciones dependiendo de lo que se requiriera. las funciones de orden superior son un gran agente para la programación funcional porque controla el flujo de datos a traves funciones, recibiendo la indicada según sea el caso. Uno de los problemas que nos representa su uso, es que en términos de lenguaje Java, dicha función se vuelve un objeto, y se crea una instancia de este aunque la función no se haya invocado; esto gasta espacio en memoria que puede traducirse en realentización de tu aplicación. 
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Si creamos esta función de orden superior
+```kotlin
+fun nonInlined(runLambda(): () -> Unit) {
+    println("Antes de correr la función recibida")
+    runLambda()
+    println("después de correr la función recibida")
+}
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+Al meternos en el bytecode, podemos leer algo similar a esto (simplificado para mejor entendimiento.)
 
-![imagen](https://picsum.photos/200/300)
+```java
+public void nonInlined(Function runLambda()) {
+    System.out.println("Antes de correr la función recibida");
+    runLambda.invoke();
+    System.out.println("Después de correr la función recibida");
+}
+
+```
+
+Java también crea un objeto Function para guardar la función 
+
+```kotlin
+nonInlined(new Function() { //este new Function es la instancia que consume espacio innecesario en memoria
+    @Override
+    public void invoke() {
+        System.out.println("do something here");
+    }
+});
+```
+
+Es por esto que es recomendable utilizar el keyword *inline*. Con esto, lo que se hace es que, en vez de crear una clase para nuestra función e invocarla cuando se mande a llamar, el código dentro del inline function se copia y pega en cada implementación del high order function, dando como desventaja el agrandamiento del código.
 
 
+```kotlin
+inline fun inlined(runLambda(): () -> Unit) {
+    println("Antes de correr la función recibida")
+    runLambda()
+    println("después de correr la función recibida")
+}
+
+```
+Al llamarlo de esta forma:
+
+```kotlin
+inlined {
+    println("Llamando a la función inlined")
+}
+```
+
+Observamos aquí que en vez de crearse una instancia, se copió y pegó el código en el inline con la lambda incluída
+
+```kotlin
+System.out.println("before");
+System.out.println("do something here");
+System.out.println("after");
+```
+
+
+***NOTAS***
+
+* No utilizarlos en HOF muy grandes, ya que este alargaría más el bytecode por cada implementación del inline function.
+* Utilizarlos en funciones que no reciban funciones como parámetros no tiene ninguna ventaja.
