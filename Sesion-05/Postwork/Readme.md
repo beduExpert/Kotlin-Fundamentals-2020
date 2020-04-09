@@ -1,29 +1,19 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Postwork
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Complementar la información de programación funcional 
+- Mostrar un soporte para la implementación de este paradigma en tu proyecto final
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber terminado todos los ejemplos y retos de esta [Sesión](../)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Estos videos de preview son gratuitos, pero requieren inscripción, la parte gratuita explica únicamente conceptos, la versión de paga explica cómo se implementan en kotlin https://www.functionalhub.com/courses/take/introduction-functional-programming-kotlin/lessons/2222826-what-is-functional-programming. 
 
-<details>
+No olvides echar un vistazo a este pequeñó tutorial de programación funcional oficial de Kotlin, que se enfoca en la migración desde Python. Aquí se explica un poco el concepto de funciones lambda o inline functions. https://kotlinlang.org/docs/tutorials/kotlin-for-py/functional-programming.html
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agreges al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
-
+Evitaremos en lo posible el uso de iteraciones y usaremos aproximaciones más efectivas según su caso: filter, map , etc.
