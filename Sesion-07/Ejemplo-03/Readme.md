@@ -1,28 +1,73 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Casts
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Utilizar los distintos tipos de modificación de tipo de datos de un valor en kotlin 
+- Lidiar con los errores en el casting
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber leído los ejercicios 1 y 2 de esta unidad
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+### Smart Casts y operador is
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+El operador ***is*** permite saber si una variable tiene un tipo de dato asignado o no.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+```kotlin
+    if (obj !is String) { 
+        println("Not es una String")
+    }
+```
 
-![imagen](https://picsum.photos/200/300)
+si el objeto no es una String, se informa;.
+
+Ahora, creamos una funcion que arroje un resultado numérico con base en su tipo de dato:
+
+```kotlin
+fun imprimirNumerico(x: Any) {
+    when (x) {
+        is Int -> println(x + 1)
+        is String -> println(x.length + 1)
+        is IntArray -> println(x.sum())
+    }
+}
+```
+
+Para probar el código utilizamos: 
+
+```kotlin
+imprimirNumerico(20)
+imprimirNumerico("asereje")
+imprimirNumerico(intArrayOf(2,4,6))
+```
+
+Si observamos el código anterior, x es cualquier tipo de valor, pero aen el when, al verificar que sea Int, hace una suma como si de un entero se tratase; si es String, saca la longitud como si de una String se tratace y hace una sumatoria en caso de un IntArray. En los 3 casos se toma la variable x con un tipo propio, no como su tipo predefinido Any, esto se debe a que el operador is hace un casting automático, por eso lo llaman Smart Cast. Estos smart casts tienen sus limitaciones, pero es bastante util.
+
+### Unsafe Cast
+
+Si queremos hacer un cast de un objeto Any nullable con valor nulo a un String, nos dará error porque null no puede ser convertido a una cadena de texto
+
+
+```kotlin
+val obj2: Any? = null
+val str: String = obj2 as String  
+```
+
+esto nos traerá el siguiente error:
+
+> Exception in thread "main" kotlin.TypeCastException: null cannot be cast to non-null type kotlin.String
+
+### Safe cast
+
+A diferencia del anterior, si se quiere castear un valor nulo, podemos utilizar un safe cast para que en todo caso, a nuestra variable se le asigne un valor nulo:
+
+```kotlin
+val str: String? = obj2 as? String
+println(str)
+```
+
+
 
 
