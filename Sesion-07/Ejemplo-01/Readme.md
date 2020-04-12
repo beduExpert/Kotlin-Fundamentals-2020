@@ -67,7 +67,7 @@ Recordamos el codigo anterior:
 ```
 y genera el siguiente error de sintaxis:
 
-<img src="./images/01.png" width="60%">
+<img src="./images/01.png" width="95%">
 
 
 En el ejemplo anterior, para acceder a propiedades o métodos de nuestra variable, utilizamos el operador **?**, lo que sucede a continuación es que si nullableText no está vacia (no es nula), entonces va a imprimir el valor que conrresponde a lu propiedad length, de lo contrario veremos una impresión en consola como "null".
