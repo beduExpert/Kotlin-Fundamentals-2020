@@ -1,29 +1,16 @@
- 
+## Reto final - Manejando errores
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+### OBJETIVO
+- Evitar crashes en nuestra aplicación
+- Manejar de forma estratégica los errores 
 
-### OBJETIVO 
+#### REQUISITOS
 
-- Lo que esperamos que el alumno aprenda 
-
-#### REQUISITOS 
-
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Terminar los ejercicios y retos de esta sesión.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Kotlin maneja de forma mucho más inteligente los NullPointerException que java, y eso es algo bueno debido a que este es uno de los errores más comunes cometidos por programadores. Además, ofrece herramientas ya conocidas para manejo de errores, como ***try-catch*** que se utiliza en muchos lenguajes de programación.
 
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
+Aquí damos algunas formas de manejar mejor los errores.
 
