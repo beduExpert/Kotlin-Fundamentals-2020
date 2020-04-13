@@ -1,29 +1,38 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Introducción a las Coroutines
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Reforzar el aprendizaje adquirido en el (Ejemplo 1)[../Ejemplo-01]
+- Probar suspensiones y bloqueos en contextos inapropiados
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Saber lanzar corrutinas
+2. Poder suspender hilos
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Comenzaremos intentando probar métodos de hilos y rutinas fuera de contexto
+
+
+- Utilizar la función de suspensión ***delay()*** dentro del hilo principal, comentar lo que sucede y su causa.
 
 <details>
+	<summary>respuesta</summary>
+	
+Nos arroja el siguiente error:
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+> Suspend function 'delay' should be called only from a coroutine or another suspend function
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+</details>
 
-![imagen](https://picsum.photos/200/300)
+- Lanzar una corrutina y dentro de ella, suspender el hilo por un segundo. Comentar el resultado y su causa.
+
+<details>
+	<summary>respuesta</summary>
+Al parecer, el thread principal no para, debido a que pese a que la corrutina se lanzó desde este, el hilo donde corre es otro, este hilo soporta muchas corrutinas.
+
+</details>
+
+
 
