@@ -3,7 +3,7 @@
 ### OBJETIVO
 
 - Generar operaciones asíncronas 
-- Corroborar la propiedad de ligereza de las corrutinas frente a los Threads
+- Diferenciar entre bloqueo y suspensión
 
 #### REQUISITOS
 
