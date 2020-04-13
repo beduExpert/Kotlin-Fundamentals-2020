@@ -94,10 +94,10 @@ Al correr debe dar un resultado como este, con sus respectivas pausas ( El códi
 		
 - [Ejemplo 02: Threads vs Coroutines](Ejemplo-02)
 		
-- [Ejemplo 03: Data class y Companion object](Ejemplo-03)
+- [Ejemplo 03: Suspend functions yJobs](Ejemplo-03)
 	- [Reto 02](Reto-02)
 
-- [Reto final: puliendo POO en el proyecto](Reto-final)
+- [Reto final](Reto-final)
 
 - [Postwork](Postwork)
 
