@@ -12,7 +12,7 @@ En este módulo, requerimos instalar la dependencia ***kotlinx.coroutines*** en 
 
 El setup inicial para cada proyecto dentro de este módulo se resume en el siguiente gif:
 
-<img src="./images/proj-setup.gif">
+<img src="./images/coroutines-setting.gif">
 
 
 *****Paso 1*****
