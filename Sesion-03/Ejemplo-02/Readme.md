@@ -34,7 +34,7 @@ class Vehiculo constructor(val marca:String, val modelo: String, var color: Stri
     var encendido = false
 ```
 
-Como marca y modelo no cambian, usaremos val; el color puedes ser cambiado, por eso es var.
+Como marca y modelo no cambian, usaremos val; el color puedes ser cambiado, por eso es var. Esto debido a que el keyword *val* implica que la variable se le asigna el valor una sola vez y es inmutable (no cambia su valor), mientras que *var* permite modificar indefinidamente su valor (mutable).
 
 Como la clase Vehiculo no tiene ninguna anotación o modificadores de visibilidad, podemos omitir el keyword *constructor*
 
