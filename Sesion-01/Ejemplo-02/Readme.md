@@ -46,7 +46,7 @@ vemos que la variable se volvió var, para poder ser reasignada
 
 corriendo el código: 
 
-<img src="imgs/01.png"/>
+> 1
 
 
 Ahora se correremos abajo: 
