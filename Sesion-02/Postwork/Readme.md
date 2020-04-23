@@ -37,7 +37,7 @@ fun pausar(){
         println("Canción pausada")
 }
 
-fun pagar(saldo,precio){
+fun pagar(saldo:Double,precio:Double){
         saldo = -precio
         println("Servicio pagado! te restan $saldo pesos")
 }
