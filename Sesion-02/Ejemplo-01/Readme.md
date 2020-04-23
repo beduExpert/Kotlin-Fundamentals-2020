@@ -176,11 +176,63 @@ Después, hay qué correr la función como sigue"
     println("Usuario loggeado? $userValidated") // Imprimir si el usuario están ingicado.
 ```
 
+##### Default Arguments y Named Arguments
 
+Los ejemplos anteriormente vistos pasan sus parámetros en orden, de la misma forma en la que se declaran en la creación de la función, de modo que si tuviéramos dos parámetros de distintos tipos e invirtiéramos el orden de estos al momento de llamar la función, nos daría un error porque los tipos de datos no coincidirían con los de la definición. De la misma forma, si el número de parámetros ingresados en la llamada de la función son distintos al de la declaración, marcará otro error. Crearemos una función para el área de un rectángulo:
 
+```kotlin
+fun rectangleArea(base:Double ,  height: Double ):Double{
+    return base*height
+}
+```
 
+llamamos la función sin pasar argumentos:
 
+```kotlin
+println("Area con valores por defecto: ${rectangleArea()}")
+```
 
+El resultado obtenido es:
+
+> <p style="color=red">Error:(..,..) Kotlin: No value passed for parameter 'base'</p>
+
+Como siempre debemos tener un valor para esos parámetros, existe una forma de establecer valores por defecto en caso de la ausencia de uno o más parámetros:
+
+```kotlin
+fun rectangleArea(base:Double = 20.0,  height: Double = 30.0):Double{
+    return base*height
+}
+```
+
+Determinamos entonces base con valor 20 y altura como 30 en caso de no pasarlos como parámetro. Hacemos dos pruebas; la primera sin argumentos, y la segunda solo con la base:
+
+```kotlin
+    //correr area rectangulo con los valores por defecto
+    println("Area con valores por defecto: ${rectangleArea()}")
+
+    //Area de rectangulo con base seteada y altura por defecto
+    println("Area con altura por defecto: ${rectangleArea(10.0)}")
+```
+
+para el primer ejemplo, se ocupan los valores por defecto 20x30 = 600. Para el segundo, la base es 10 y la altura es por defecto, o sea 10x30 = 300.
+
+Tenemos ahora un problema, si queremos poner únicamente la altura, no podemos hacerlo debido a que el orden de los argumentos nos obliga a poner primero la b ase para determinar la altura. Afortunadamente, los named arguments permiten pasar argumentos a funciones por medio de su nombre y prescindiendo del orden en que se declaran. Entonces, si queremos asignar únicamente altura, solo tenemos qué poner el nombre y su valor dentro de los paréntesis:
+
+//Area de rectangulo con por defecto y altura seteada con named arguments
+    println("Area con base por defecto: ${rectangleArea(height = 10.0)}")
+    
+En este caso, la base vale 20 y la altura 10, por lo tanto 20x10 = 200.
+
+Podemos determinar los dos parámetros con argumentos nombrados (named arguments) sin ningún problema y en el orden que sea:
+
+```kotlin
+//setear base y altura con named arguments
+    println("Area con datos determinados con named arguments: ${rectangleArea(height = 2.0,base=3.5)}")
+```
+
+En este caso, el valor arrojado es de 2x3.5 = 7. 
+
+Puedes intentar cambiar el orden para verificar que esto no afecta al resultado de la función.
 
 
 
