@@ -1,16 +1,23 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Manejo de errores
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Prevenir errores y excepciones mediante manejadores.
+- Arrojar excepciones si se comete un error en tiempo de ejecución.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
-
-	- [Ejemplo 01](Ejemplo-01)
+- [Ejemplo 01: Null safety](Ejemplo-01)
 	- [Reto 01](Reto-01)
+		
+- [Ejemplo 02: Inline functions](Ejemplo-02)
+		
+- [Ejemplo 03: Operaciones funcionales](Ejemplo-03)
+	- [Reto 02](Reto-02)
 
+- [Reto final - Implementando Programación funcional](Reto-final)
+
+- [Postwork](Postwork)
+
+
+	

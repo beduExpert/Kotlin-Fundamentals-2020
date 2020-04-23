@@ -89,9 +89,17 @@ Al correr debe dar un resultado como este, con sus respectivas pausas ( El códi
 
 #### ORGANIZACION DE LA CLASE 
 
-
-- Tema que veran en el ejemplo
-
-	- [Ejemplo 01](Ejemplo-01)
+- [Ejemplo 01: Introducción a las coroutines](Ejemplo-01)
 	- [Reto 01](Reto-01)
+		
+- [Ejemplo 02: Threads vs Coroutines](Ejemplo-02)
+		
+- [Ejemplo 03: Suspend functions yJobs](Ejemplo-03)
+	- [Reto 02](Reto-02)
+
+- [Reto final](Reto-final)
+
+- [Postwork](Postwork)
+
+
 

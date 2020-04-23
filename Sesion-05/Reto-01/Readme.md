@@ -1,4 +1,4 @@
- 	## Titulo del Ejemplo 
+## Funciones literales y Funciones de orden superior
 
 ### OBJETIVO 
 
