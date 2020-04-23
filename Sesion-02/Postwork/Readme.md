@@ -86,7 +86,7 @@ fun login(user: String, pass:String): Boolean{
 Si vamos a comprar un artículo, debemos verificar que tengamos saldo suficiente
 
 ```kotlin
-fun pagar(saldo,precio){
+fun pagar(saldo:Double,precio:Double){
         if(saldo>=precio){
                 saldo-=precio
                 println("Artículo comprado, saldo restante: $saldo pesos")
