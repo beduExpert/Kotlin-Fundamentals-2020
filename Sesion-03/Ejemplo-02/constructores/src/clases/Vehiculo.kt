@@ -1,7 +1,7 @@
 package clases
 
 //como marca y modelo no cambian, usaremos val; el color puedes ser cambiado, por eso es var
-class Vehiculo (val marca:String, val modelo: String, var color: String) {
+class Vehiculo (val marca:String, val modelo: String, var color: String = "Negro") {
 
     init{
         println("""Los datos del coche son:
