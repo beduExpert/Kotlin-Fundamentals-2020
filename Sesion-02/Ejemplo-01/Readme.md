@@ -10,6 +10,8 @@
 
 #### DESARROLLO
 
+##### General
+
 En esta serie de ejercicios aprenderemos a definir y crear funciones en kotlin.
 
 Una función es una serie de instruccicones en un módulo para lograr un objetivo específico.
@@ -132,6 +134,47 @@ El resultado debe ser:
 
 > El número áureo vale 1.618
 
+
+##### Local functions (Funciones locales)
+
+Una función local es básicamente una función dentro de otra. Tiene las siguientes características
+
+- Es una función únicamente al alcance de la función que la contiene
+
+- se declara como una función normal
+
+- Mantiene limpio el código al ayudar mejor a establecer las jerarquías y conexiones entre funciones.
+
+- Agrega reusabilidad al código.
+
+
+Sabiendo funciones locales se declaran de la misma forma que las normales,  vamos a crear una función login que valide usuario y contraseña. Dicha función se llamará validate y recibirá nuestro parámetro a evaluar (para este caso, si la variable no está vacía).
+
+```kotlin
+    //Funciones locales
+    fun login(user: String, password: String) : Boolean {
+        fun validate(input: String): Boolean{
+            if (input.isEmpty()) {
+                return false
+            }
+            return true
+        }
+        val userValidated = validate(user)
+        val passValidated = validate(password)
+
+        return userValidated && passValidated
+    }
+```
+
+En la función anterior, primero declaramos la función validate y después validamos usuario y contraseña. Devolvemos las banderas de modo
+que las dos deben estar correctas para recibir un login exitoso.
+
+Después, hay qué correr la función como sigue"
+
+```kotlin
+    val userValidated = login("Juanito","Navaja") //utilizar la función login y guardar el resultado en una variable.
+    println("Usuario loggeado? $userValidated") // Imprimir si el usuario están ingicado.
+```
 
 
 
