@@ -26,7 +26,7 @@ Haciendo un repaso, en kotlin todas las variables son tomadas como objetos. Por 
 
 ```kotlin
 val a=20
-println("a es igual a 20? a.equals(20)")
+println("a es igual a 20? ${a.equals(20)}")
 ```
 
 >a es igual a 20? true
