@@ -149,6 +149,35 @@ la salida es:
 
 si se omite las placas en el constructor, no se ejecutará el constructor secundario.
 
+El constructor es una función, por lo tanto tiene sus características, algunas vistas en [Este Ejemplo](../../Sesion-02/Ejemplo-01), por lo cual podríamos determinar en nuestra clase valores por defecto y usar named arguments. Vamos a poner el color negro por defecto
+
+```kotlin
+class Vehiculo (val marca:String, val modelo: String, var color: String = "Negro") {
+...
+```
+
+y creamos un volkswagen gol para corroborar que funciona
+
+```kotlin
+val golNegro = Vehiculo("Volkswage","Gol")
+```
+
+Al observar el resultado, se imprime que el color es negro.
+
+Ahora utilizaremos named arguments, crearemos un pointer azul:
+
+```kotlin
+val pointer = Vehiculo(
+        color = "azul",
+        marca = "Volkswagen",
+        modelo = "Pointer"
+    )
+```
+
+el resultado debe ser impreso sin ningún detalle.
+
+
+
 
 
 
