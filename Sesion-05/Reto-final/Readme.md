@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 - Aproximar nuestro proyecto a la programacion funcional
-- Evitar en lo posible el us
+- Evitar en lo posible el uso de estados mutables 
 
 #### REQUISITOS
 
