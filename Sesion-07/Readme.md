@@ -11,9 +11,9 @@
 	- [Reto 01](Reto-01)
 		
 - [Ejemplo 02: Exceptions y manejo de errores](Ejemplo-02)
+	- [Reto 02](Reto-02)
 		
 - [Ejemplo 03: Casts](Ejemplo-03)
-	- [Reto 02](Reto-02)
 
 - [Reto final - Implementando Programación funcional](Reto-Final)
 
