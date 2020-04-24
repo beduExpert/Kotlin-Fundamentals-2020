@@ -93,16 +93,18 @@ Ahora vamos a hacer una función lambda más interesante. Estamos creando una ap
 
 ```kotlin
 	val saverGrade: (Double,Double) -> String = { expected: Double, saved: Double ->
-		val percentage = saved / expected
+        val percentage = saved / expected
 
-		if (percentage > 1) "Ahorrador pro"
-		else if (percentage == 1.0) "Buen ahorrador"
-		else if (percentage < 1.0 && percentage >= 0.8) "almost"
-		else "aprendiz saver"
-	    }
 
-	    println(saverGrade(100.0,120.0))
-	}
+        when {
+            percentage > 1  -> "Ahorrador pro"
+            percentage == 1.0   -> "Buen ahorrador"
+            percentage < 1.0 && percentage >= 0.8 -> "Almost"
+            else     -> "aprendiz saver"
+        }
+    }
+
+    println(saverGrade(100.0,120.0))
 ```
 
 **BONUS***
@@ -124,15 +126,17 @@ val toSquare: Int.() -> Int = square
 Las funciones anónimas dan un formato más tradicional a las funciones literales: la sintaxis con la que se crean es la misma que cualquier función convencional, pero removiendo su nombre. Por lo tanto, si queremos que nuestra lambda se vuelva una función anónima, lo hacemos de la siguiente forma: 
 
 ```kotlin
- val saverGrade2 =  fun(expected:Double, saved:Double): String{
+	val saverGrade2 =  fun(expected:Double, saved:Double): String{
         val percentage = saved / expected
 
-        if(percentage > 1) return "Ahorrador pro"
-        else if (percentage == 1.0) return "Buen ahorrador"
-        else if (percentage < 1.0 && percentage >= 0.8) return "almost"
-        else  return "aprendiz saver"
+        return when {
+            percentage > 1  -> "Ahorrador pro"
+            percentage == 1.0   -> "Buen ahorrador"
+            percentage < 1.0 && percentage >= 0.8 -> "Almost"
+            else     -> "aprendiz saver"
+        }
     }
-    
+
     println(saverGrade2(100.0,70.0))
 ```
 
