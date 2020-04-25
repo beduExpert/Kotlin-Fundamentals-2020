@@ -122,7 +122,7 @@ Tenemos 5 camisas en el stock, y un cliente quiere reservar 7 para un evento. la
 ```
 Si corremos este ejemplo, nos va a salir el siguiente error:
 
-<img src="imgs/error.png" width="33%">
+<img src="images/error.png" width="33%">
 
 por lo tanto, tendremos que usar un try-catch que, en caso de error, quitemos la reserva de las camisas en stock. El ejemplo quedaría así:
 
