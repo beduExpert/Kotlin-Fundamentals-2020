@@ -2,11 +2,15 @@
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Suspender la tarea de una corrutina hasta terminar de ejecutar otro proceso.
+- Identificar la diferencia entre suspender y parar
+- Parar corrutinas mediante un método
+- Paralelizar dos corrutinas para que un Scope espere a la finalización de las dos
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Haber sintetizado el concepto de corrutinas
+2. Saber utilizar scopes y diferenciarlos del Global Scope
 
 #### DESARROLLO
 
