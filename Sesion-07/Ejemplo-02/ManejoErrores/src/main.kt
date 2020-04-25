@@ -2,17 +2,23 @@ import java.lang.Exception
 import java.lang.NumberFormatException
 
 fun main(){
+
     try {
         val v = "bedu.org"
         v.toInt()
+        val divider = 0
+        val a = 3/divider //comentar para reproducir el primer error
+
     } catch(e:NumberFormatException) {
-        println("No se pudo convertir, hubo un error: $e")
+        println("No se puede convertir este tipo a numerico:")
         e.printStackTrace()
 
+    }catch(e:Exception){
+        println("No se pudo convertir, hubo un error: $e")
     } finally {
         println("Proceso terminado")
     }
-    
+
     val stock = listOf(Shirt(),Shirt(),Shirt(),Shirt(),Shirt())
 
     try {
@@ -34,7 +40,6 @@ fun main(){
     } finally {
         println("Gracias por su preferencia")
     }
-
 
 
     val possibleNumber = "bedu.org"
