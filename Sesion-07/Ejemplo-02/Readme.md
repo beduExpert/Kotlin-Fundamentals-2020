@@ -70,7 +70,6 @@ e.printStackTrace()
 ```
 
 
-
 El bloque **try-catch** también se puede usar como una expresion:
 
 ```kotlin
@@ -78,6 +77,26 @@ val possibleNumber = "bedu.org"
 val a: Int? = try { possibleNumber.toInt() } catch (e: NumberFormatException) { null }
 
 println("El numero convertido es: $a")
+```
+
+El bloque también puede cachar distintas excepciones, en este ejemplo agregaremos la posibilidad de tener un error al dividir entre cero:
+
+```kotlin
+try {
+        val v = "bedu.org"
+        v.toInt()
+        val divider = 0
+        val a = 3/divider //comentar para reproducir el primer error
+
+    } catch(e:NumberFormatException) {
+        println("No se puede convertir este tipo a numerico:")
+        e.printStackTrace()
+
+    }catch(e:Exception){
+        println("No se pudo convertir, hubo un error: $e")
+    } finally {
+        println("Proceso terminado")
+    }
 ```
 
 
