@@ -12,9 +12,50 @@ fun main(){
     } finally {
         println("Proceso terminado")
     }
+    
+    val stock = listOf(Shirt(),Shirt(),Shirt(),Shirt(),Shirt())
+
+    try {
+        //vamos a intentar comprar 7 camisas
+        val shirtsToRent = 7
+        val end = shirtsToRent -1
+
+        for(i in 0..end ){
+            stock[i].reserve()
+        }
+
+    } catch(e:ArrayIndexOutOfBoundsException) {
+        println("No hay suficientes camisas en stock, por favor disminuye la cantidad")
+
+        stock.forEach {
+            it.unreserve()
+        }
+
+    } finally {
+        println("Gracias por su preferencia")
+    }
+
+
 
     val possibleNumber = "bedu.org"
     val a: Int? = try { possibleNumber.toInt() } catch (e: NumberFormatException) { null }
 
     println("El numero convertido es: $a")
+}
+
+
+class Shirt(){
+    var available = true
+
+    fun reserve(){
+        if(available){
+            available = false
+            println("Reservación efectuada")
+        }
+    }
+
+    fun unreserve(){
+        available = true
+        println("Reservación cancelada")
+    }
 }
