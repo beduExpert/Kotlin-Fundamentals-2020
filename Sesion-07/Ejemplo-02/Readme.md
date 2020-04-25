@@ -80,6 +80,78 @@ val a: Int? = try { possibleNumber.toInt() } catch (e: NumberFormatException) { 
 println("El numero convertido es: $a")
 ```
 
+
+Vamos a utilizar un ejemplo de uso de try-catch:
+
+Supongamos una tienda de renta de camisas online. La clase para representar una camisa es la siguiente:
+
+```kotlin
+class Shirt(){
+    var available = true
+
+    fun reserve(){
+        if(available){
+            available = false
+            println("Reservación efectuada")
+        }
+    }
+
+    fun unreserve(){
+        available = true
+        println("Reservación cancelada")
+    }
+}
+```
+
+podemos reservar las camisas y liberar la reservación. Ahora crearemos un *List* con todas las camisas disponibles en stock.
+
+```kotlin
+val stock = listOf(Shirt(),Shirt(),Shirt(),Shirt(),Shirt())
+```
+
+Tenemos 5 camisas en el stock, y un cliente quiere reservar 7 para un evento. la varialble *shirtsToRent* la determina el cliente, por lo tanto lo metemos en un ciclo para reservar las camisas.
+
+```kotlin
+ //vamos a intentar comprar 7 camisas
+        val shirtsToRent = 7
+        val end = shirtsToRent -1
+
+        for(i in 0..end ){
+            stock[i].reserve()
+        }
+```
+Si corremos este ejemplo, nos va a salir el siguiente error:
+
+<img src="imgs/error.png" width="33%">
+
+por lo tanto, tendremos que usar un try-catch que, en caso de error, quitemos la reserva de las camisas en stock. El ejemplo quedaría así:
+
+```kotlin
+val stock = listOf(Shirt(),Shirt(),Shirt(),Shirt(),Shirt())
+
+    try {
+        //vamos a intentar comprar 7 camisas
+        val shirtsToRent = 7
+        val end = shirtsToRent -1
+
+        for(i in 0..end ){
+            stock[i].reserve()
+        }
+
+    } catch(e:ArrayIndexOutOfBoundsException) {
+        println("No hay suficientes camisas en stock, por favor disminuye la cantidad")
+
+        stock.forEach {
+            it.unreserve()
+        }
+
+    } finally {
+        println("Gracias por su preferencia")
+    }
+```
+
+
+
 #### The nothing type
 
 Ya que throw es una expresión se puede usar por supuesto en una operación Elvis.
