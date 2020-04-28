@@ -1,11 +1,8 @@
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]  
-
-## Titulo de la Sesion 
+## Interoperabilidad Kotlin-Java
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Aplicar los lineamientos sobre la comunicación de java y kotlin.
 
 #### ORGANIZACION DE LA CLASE 
 
