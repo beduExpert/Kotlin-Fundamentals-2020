@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Demostrar la capacidad de interoperabilidad entre clases Java y Kotlin
+- Demostrar la capacidad de interoperabilidad entre clases Java para Kotlin
 - Utilizar los getters/setters de una clase Java como propiedades en Kotlin
 - Experimentar las limitaciones de la comunicación entre estos
 
