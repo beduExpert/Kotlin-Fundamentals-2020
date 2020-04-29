@@ -7,7 +7,8 @@
 
 #### REQUISITOS 
 
-1. 
+1. Conocimiento básico de lenguaje Java
+2. Dominio de tema de clases e interfaces
 
 #### DESARROLLO
 
