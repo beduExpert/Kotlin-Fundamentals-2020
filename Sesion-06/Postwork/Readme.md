@@ -74,7 +74,7 @@ algunos ejemplos son:
 
 ##### Integración al proyecto
 
-Busca implementar nuevas funcionalidades a tus clases, como dar formato a fechas, dinero y tiempo; o quizá generar números aleatorios. Prueba buscando soluciones en internet a estas funcionalidades pero en lenguaje Java, y después integrándolo a tu proyecto. Esto es algo útil en el desarrollo de apps porque muchas de las soluciones (incluyendo stackoverflow) siguen presentándose en Java.
+Busca implementar nuevas funcionalidades a tus clases, como dar formato a fechas, dinero y tiempo; o quizá generar números aleatorios. Prueba buscando soluciones en internet a estas funcionalidades pero en lenguaje Java, y después integrándolo a tu proyecto. Esto es algo útil en el desarrollo de apps porque tanto en documentación de librerías como muchas de las soluciones a problemas (incluyendo stackoverflow) siguen presentándose en Java.
 
 
 
