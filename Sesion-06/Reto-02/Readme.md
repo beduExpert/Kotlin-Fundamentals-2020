@@ -2,11 +2,12 @@
 
 ### OBJETIVO 
 
-- Practicar el uso
+- Practicar código básico Java para comprenderlo al encontrar recursos en este lenguaje
+- Utilizar los recursos estáticos de las clases Java
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber terminado el [Ejemplo 2](../Ejemplo-02)
 
 #### DESARROLLO
 
