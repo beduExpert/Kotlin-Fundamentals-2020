@@ -74,7 +74,7 @@ Esto se debe a que el identificador while ya es un keyword en Java.
 
 Ahora, para probar que no exista ningún detalle, corremos en nuestro *main* de kotlin el método estático *fun*. Observamos el siguiente error:
 
-<img src= "images/01.png" width="60%"> 
+<img src= "images/1.png" width="60%"> 
 
 es por eso que se utilizan los backticks. Si utilizamos el autocompletamiento para estos métodos, los backticks rodeandes se agregan automáticamente:
 
