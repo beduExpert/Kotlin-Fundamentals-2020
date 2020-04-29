@@ -1,12 +1,8 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 2
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Practicar el uso
 
 #### REQUISITOS 
 
@@ -14,16 +10,108 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Crear una clase ***SmartPhone*** en Java que contenga los siguientes campos:
+
+	precio
+	nombre
+	modelo
+	procesador
+
+Y los siguientes métodos:
+	getPrice()
+	getName()
+	getModel()
+	
+<details>
+	<summary>Solucion</summary>
+	
+```java
+public class SmartPhone {
+
+    private float price;
+    private String name;
+    private String model;
+    private String processor;
+
+
+    public SmartPhone(float price,String name, String model, String processor){
+        this.price = price;
+        this.name = name;
+        this.model = model;
+        this.processor = processor;
+    }
+
+    public float getPrice(){
+        return price;
+    }
+
+    public String getName(){
+        return name;
+    }
+    public String getModel(){
+        return model;
+    }
+}
+```
+</details>
+	
+2. Crear una variable estática pública en la clase ***stock***, que guarde el número de variables disponibles. Agregar el método estático ***restock()*** para agregar más teléfonos (se suma lo anterior con lo nuevo ingresado) y otro método estático para restarle 
+un elemento al stock. Agregar un getter estático para stock.
 
 <details>
-
 	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+	
+```java
+    protected static int stock = 0;
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+    public static void restock(int newStock){
+        stock += newStock;
+    }
 
-![imagen](https://picsum.photos/200/300)
+    public static void minusStock(){
+        stock--;
+    }
+
+    public static int getStock(){
+        return stock;
+    }
+```
+</details>
+
+
+3. Crea una nueva instancia de la clase smartPhone e imprime su precio.
+
+
+<details>
+	<summary>Solucion</summary>
+	
+```kotlin
+val iPhone = SmartPhone(
+        21230.53F,
+        "iPhone",
+        "11 Pro",
+        "A13 Bionic"
+    )
+
+    println(iPhone.price)
+```
+</details>
+
+
+
+4. Hacer un restock de 10 elementos, remover dos smartphones del stock, imprimir el stock, resurtir 5 elementos y volver imprimir el stock.
+
+<details>
+	<summary>Solucion</summary>
+	
+```kotlin
+    SmartPhone.restock(10)
+    SmartPhone.minusStock()
+    SmartPhone.minusStock()
+    println("Stock actual: ${SmartPhone.getStock()}")
+    SmartPhone.restock(5)
+    println("Stock actual: ${SmartPhone.getStock()}")
+```
+</details>
+
 
