@@ -44,7 +44,7 @@ y funciona! ahora vamos a convertir Utils a Kotlin:
 
 Convertir de Java a kotlin puede traer errores, por lo que nos advierten con este diálogo
 
-<img src="images/0.png" width="60%">
+<img src="images/1.png" width="60%">
 
 Finalmente nuestro código quedó así:
 
