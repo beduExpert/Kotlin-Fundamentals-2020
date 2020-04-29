@@ -1,29 +1,71 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 1
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Traducir una clase Java en Kotlin
+- Heredar de una clase Java
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Haber terminado el [Ejemplo 1](../Ejemplo-01)
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Copiar el código de la clase Java *User* dentro de un archivo kotlin llamado User (vacío). Discutir lo que sucede.
+
+2. Tenemos esta clase Abstracta ***Product*** en Java. 
+
+```java
+public abstract class Product {
+
+    float price;
+    String name;
+    String sku;
+
+
+    public Product(float price, String name, String sku ) {
+        this.price = price;
+        this.name = name;
+        this.sku = sku;
+    }
+
+    public abstract float getTotalPrice(int quantity);
+}
+```
+
+
+Crear una clase en Kotlin llamado SmartWatch que herede de Product y que devuelva el precio total con base en el precio y la cantidad a comprar (recibido como argumento en el método).
 
 <details>
+	<summary>Solución</summary>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+```kotlin
+class SmartWatch(
+    price: Float,
+    name: String,
+    sku: String) : Product( price, name, sku) {
+    override fun getTotalPrice(quantity: Int): Float {
+        return quantity*price
+    }
+}
+```
+</details>
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+3. Desde el *main*, crear un nuevo smartwatch y obtener el precio de 2 de estos relojes.
 
-![imagen](https://picsum.photos/200/300)
+<details>
+	<summary>Solución</summary>
+
+```kotlin
+val appleWatch =
+        SmartWatch(
+            7000F,
+            "Apple Watch",
+            "S36-292"
+        )
+
+    println(appleWatch.getTotalPrice(2))
+```
+</details>
+
 
