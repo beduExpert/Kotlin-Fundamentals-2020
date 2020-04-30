@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Definir clases base que generalicen las propiedades y el comportamiento de una familia.
+- Definir clases base que generalicen las propiedades y el comportamiento de una jerarquía
 - Heredar y redefinir miembros de una clases padre.
 
 #### REQUISITOS
