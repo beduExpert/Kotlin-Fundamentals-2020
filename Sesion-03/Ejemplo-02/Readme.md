@@ -3,7 +3,6 @@
 ### OBJETIVO
 
 - Implementar constructores en nuestras clases para definir variables esenciales
-- Utilizar modificadores de accceso para restringir los atributos de la clase
 
 #### REQUISITOS
 
