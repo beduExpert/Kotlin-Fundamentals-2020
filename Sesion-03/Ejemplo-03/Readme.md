@@ -3,7 +3,7 @@
 ### OBJETIVO
 
 - Personalizar comportamiento al asignar u obtener atributos de una clase
-- Definir la visibilidad de una clase, atributo o método mediante *keywords*.
+- Utilizar modificadores de accceso para restringir los atributos de la clase
 
 #### REQUISITOS
 
