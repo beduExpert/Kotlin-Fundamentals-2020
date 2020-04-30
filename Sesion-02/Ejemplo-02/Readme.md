@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Decidir ejecutar acciones en función de un evento o estado
+- Decidir la ejecución de acciones en función de un evento o estado
 
 #### REQUISITOS
 
