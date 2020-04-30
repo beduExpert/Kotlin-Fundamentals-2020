@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Desarrollar la habilidad de preveer y hacer correctamente el manejo de posibles errores en los programas.
+- Desarrollar la habilidad de prever y hacer correctamente el manejo de posibles errores en los programas.
 
 ### REQUISITOS
 
