@@ -2,7 +2,7 @@
 
 ### OBJETIVO
 
-- Implementar funciones a nuestro código para modularizar nuestro código
+- Implementar funciones a nuestro código para modularizarlo
 
 #### REQUISITOS
 
