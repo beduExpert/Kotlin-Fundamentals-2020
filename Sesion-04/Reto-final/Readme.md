@@ -2,8 +2,8 @@
 
 ### OBJETIVO
 
-- Implementar abstracciones de clases a nuestro proyecto para organizar mejor 
-- Utilizar los Data Class para almacenar datos 
+- Orientar el proyecto a un diseño apegado a POO
+- Dimensionar las posibilidades de integración de los temas vistos en la sesión al proyecto.
 
 #### REQUISITOS
 
@@ -13,63 +13,12 @@
 
 #### DESARROLLO
 
-La herencia es un tema fundamental en la Programación orientada a objetos, ya que permite mantener un orden y control sobre la relación de clases emparentadas. Por ejemplo, en el [Postwork de la sesión previa](../Sesión-03/Postwork) ejemplificábamos con una tienda de celulares en línea, el problema es que esta tienda se limita a este producto, y para poder vender productos en general, tendríamos que abarcar más objetos; pero como el concepto producto es muy abstracto, es muy general. Tenemos qué crearle una clase abstracta.
+En este reto rediseñaremos algunas clases previamente definidas, crear nuevas para complementar nuestro proyecto e implementar nuevos concepto en general.
 
-```kotlin
-abstract class Product(
-    val name: String,
-    val description: String,
-    var sku:Int){
+* Un ejemplo que hemos tocado concurrentemente son los Productos, que podría ser la clase abstracta y heredar a varias clases que formen parte del core de nuestra aplicación, como objetos de electónica, perfumes, teléfonos, etc. También podríamos crear una clase abstracta *Videogame* y creamos distintas subclases de videojuegos como para Nintendo Switch o PS4. Para el caso de una red social podríamos hacer una clase abstracta *Post* que extienda a clases como *ImagePost* , *TextPost* *RecommendationPost* etc. 
 
-    abstract fun editProduct()
+* Para interfaces, podríamos tomar el ejemplo de redes sociales y crear la interfaz *Shareable* o *IShare* para agregar la capacidad de compartir una publicación, o *Likeable* para poder likes e incluso comentarios. Para un proyecto de calificación de películas, podríamos crear una interfaz para calificar películas. 
 
-}
-```
+* Las clases previamente definidas para el proyecto que tengan como objetivo único almacenar información pueden ser reemplazados por *Data classes*, e incluso crear nuevas. Una aplicación de pago de parquímetros utiliza la clase Vehículo para consultar los datos de tu coche, para crearlos, para editarlos y para eliminarlos, por lo que podríamos modelarlo con una Data class.
 
-definimos una función abstracta por si queremos editar algún detalle de nuestro produccto.
-
-Mobile tiene que extender de él:
-
-```kotlin
-class Mobile(
-    private val brand: String,
-    private val model:String,
-    description: String,
-    private val color: String,
-    private val price: Float,
-    sku:Int): Product(model,description,sku)
-{
-
-    init {
-        println("El celular es un $model de la marca $brand")
-    }
-
-    override fun editProduct() {
-       println("product edited!") 
-    }
-
-}
-```
-
-La idea es buscar cuál es el punto más general de los objetos que vas a definir mediante clases, para identificar si existe una abstracción sobre ellos y poder crear una clase raíz abstracta. Si existen características en algunos de los hijos o en otras classes no emparentadas, se utilizan las intefaces. En el caso anterior, podríamos utilizar una interfaz para definir las clases que apliquen a devolución (pues no serán todos), o si algunos de los productos aplican a un descuento.
-
-
-Otro de los puntos, es utilizar con mayor frecuencia los data class, que por medio de serializador, convierten datos de una API remota en formato JSON a objetos.
-
-Podríamos usar un data class para un historial de transacciones en una aplicación como Uber. La transacción puede tener información de fecha, hora y localización tanto de salida como de llegada, nombre de conductor, precio final. Podríamos también anidar dos data class para la información de localización-tiempo.
-
-```kotlin
-data class viaje(
-  val initTimeLocation: TimeLocation,
-  val endTimesLocation: TimeLocation,
-  val price: Double,
-  val chauffeur: String,
-  val idViaje: Int
-)
-
-data class TimeLocation
-    (val timestamp: Long,
-     val lat: Double,
-     val long: Double)
-```
-
+* Podríamos tener la necesidad de almacenar los tipos de colores disponibles en concreto para una tienda de zapatos, y guardarlos en varias variables o en un arreglo dentro de un companion object para que tengamos acceso a los colores disponibles y asignarlo a un objeto zapato().
