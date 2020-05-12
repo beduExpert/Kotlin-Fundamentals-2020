@@ -9,7 +9,7 @@
 
 1. Saber definir los conceptos polimorfismo, herencia y encapsulamiento.
 2. Aplicar los conceptos anteriores.
-3. Terminar los ejercicios de la [Sesión](../Sesión-04)
+3. Terminar los ejercicios de la [Sesión](../)
 
 #### DESARROLLO
 
