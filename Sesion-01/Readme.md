@@ -1,10 +1,11 @@
-## ¿Qué es Kotlin?
+# ¿Qué es Kotlin?
 
-### OBJETIVOS 
+## :dart: Objetivos 
 
 - Indicar el alcance actual del lenguaje kotlin, por qué  utilizarlo, una breve introducción de cómo funciona, sintaxis básica, Kotlin y JetBrains.
 
-#### ORGANIZACION DE LA CLASE 
+
+## 📂 Organización de la clase
 
 - [Ejemplo 01: Primeros pasos](Ejemplo-01)
 	- [Reto 01](Reto-01)
