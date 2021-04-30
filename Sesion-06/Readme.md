@@ -1,10 +1,10 @@
-## Interoperabilidad Kotlin-Java
+# Sesión 6: Interoperabilidad Kotlin-Java
 
-### OBJETIVOS 
+## :dart: Objetivos
 
 - Aplicar los lineamientos sobre la comunicación de java y kotlin.
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - [Ejemplo 01: Clases Java en Kotlin](Ejemplo-01)
   - [Reto 01](Reto-01)
