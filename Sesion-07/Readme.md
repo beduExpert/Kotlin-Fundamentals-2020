@@ -1,11 +1,11 @@
-## Manejo de errores
+# Sesión 7: Manejo de errores
 
-### OBJETIVOS 
+## :dart: Objetivos
 
 - Prevenir errores y excepciones mediante manejadores.
 - Arrojar excepciones si se comete un error en tiempo de ejecución.
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - [Ejemplo 01: Null safety](Ejemplo-01)
 	- [Reto 01](Reto-01)
