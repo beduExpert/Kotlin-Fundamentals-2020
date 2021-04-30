@@ -1,11 +1,11 @@
-## Programación orientada a objetos - Parte II
+# Sesión 4: Programación orientada a objetos - Parte II
 
-### OBJETIVOS 
+## :dart: Objetivos
 
 - Complementar el conocimiento de POO con conceptos avanzados.
 - Integrar sintaxis específica de este paradigma en kotlin.
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - [Ejemplo 01: Herencia y polimorfismo](Ejemplo-01)
 	- [Reto 01](Reto-01)
