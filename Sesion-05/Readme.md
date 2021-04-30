@@ -1,11 +1,11 @@
-## Programación funcional
+# Sesión 5: Programación funcional
 
-### OBJETIVOS 
+## :dart: Objetivos 
 
 - Llevar a la práctica los fundamentos de programación funcional.
 - Optimizar algoritmos para lograr inmutabilidad y evitar resultados inesperados.
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - [Ejemplo 01: Funciones literales y Funciones de orden superior](Ejemplo-01)
 	- [Reto 01](Reto-01)
