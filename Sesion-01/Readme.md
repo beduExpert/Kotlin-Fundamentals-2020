@@ -1,4 +1,4 @@
-# ¿Qué es Kotlin?
+# Sesión 1: ¿Qué es Kotlin?
 
 ## :dart: Objetivos 
 
