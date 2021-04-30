@@ -1,9 +1,22 @@
 # Kotlin-Fundamentals-2020 
 
-### OBJETIVO 
+## :wave: Bienvenid@s
+
+Al finalizar el módulo el alumno será capaz de utilizar la sintáxis básica de Kotlin, con el siguiente alcance:
+- Utilizar variables y tipos de datos; operadores lógicos y condiciones, así como ciclos de control. Además, utilizar la programación orientada a objetos, para crear aplicaciones android sencillas.
+- Crear un programa simple funcional y ejecutable.
+- Comprender los conceptos fundamentales de la programación orientada a objetos, sus características y la forma de aplicarlo mediante Kotlin.
+- Optimizar algoritmos para lograr inmutabilidad y evitar resultados inesperados.
+- Aplicar los lineamientos sobre la comunicación de java y Kotlin.
+- Prevenir errores y excepciones mediante manejadores.
+- Determinar las herramientas que nos provee el lenguaje para ejecutar procesos de forma paralela
+
+
+## :dart: Objetivo
+
  - Conocer la sintaxis básica de Kotlin (estructuras de datos, funciones, módulos y paquetes).Utilizar variables y tipos de datos; operadores lógicos y condiciones, así como ciclos de control. Además, utilizar la programación orientada a objetos,  para crear aplicaciones android sencillas. 
 
- ### ORGANIZACIÓN DE MÓDULO 
+## :bookmark_tabs: Sesiones
  
  - [Sesión 1](Sesion-01): ¿Qué es kotlin? - Conoce su sintaxis
  - [Sesión 2](Sesion-02): Fundamentos de programación - Maneja y controla el flujo de datos
