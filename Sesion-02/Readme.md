@@ -1,11 +1,10 @@
-## Fundamentos de programación
+# Sesión 2: Fundamentos de programación
 
-### OBJETIVOS 
+## :dart: Objetivos
 
 - Aprender a crear un programa simple funcional y ejecutable. El concepto básico de programación estructurada. Estructuras y funciones.
 
-#### ORGANIZACION DE LA CLASE 
-
+## 📂 Organización de la clase
 
 - [Ejemplo 01: Funciones](Ejemplo-01)
 	- [Reto 01](Reto-01)
