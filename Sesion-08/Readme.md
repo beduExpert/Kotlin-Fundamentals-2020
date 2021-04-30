@@ -1,12 +1,14 @@
-## Programacion Asíncrona
+# Sesión 8: Programacion Asíncrona
 
-### 🎯 OBJETIVOS 
+## :dart: Objetivos
 
 - Definir las bases de la programación asíncrona 
 - Determinar las herramientas que nos provee el lenguaje para ejecutar procesos de forma paralela 
 - crear flujos asíncronos.
 
-#### Instalación de dependencia
+## ⚙ Requisitos
+
+**Instalación de dependencia**
 
 En este módulo, requerimos instalar la dependencia ***kotlinx.coroutines*** en nuestro proyecto, esto lo haremos con ayuda de *gradle*, un sistema de automatización de construcción que entre otras cosas, permite una instalación fácil de paquetes.
 
@@ -87,7 +89,7 @@ fun main(){
 
 Al correr debe dar un resultado como este, con sus respectivas pausas ( El código es explicado en el [Ejemplo 1](./Ejemplo-01) )
 
-#### ORGANIZACION DE LA CLASE 
+## 📂 Organización de la clase
 
 - [Ejemplo 01: Introducción a las coroutines](Ejemplo-01)
 	- [Reto 01](Reto-01)
